@@ -1,0 +1,170 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/carousel",
+  "version": "1.2.0",
+  "title": "Carousel",
+  "category": "omnipress-woo",
+  "icon": "",
+  "description": "Create an engaging display of your products that scrolls horizontally",
+  "supports": {
+    "anchor": true
+  },
+  "opSettings": {
+    "navigation": {
+      "group": "design",
+      "selector": ".category-wrapper .op-woo__category-card-wrapper .op-woo__category-card.op-woo__category .op-woo__card",
+      "label": "Navigation",
+      "fields": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "color": {
+          "background": true,
+          "text": true
+        },
+        "typography": true,
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "pagination": {
+      "group": "design",
+      "selector": ".category-wrapper .op-woo__category-card-wrapper .op-woo__category-card.op-woo__category figure .op-woo__category-image",
+      "label": "Pagination",
+      "fields": {
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "color": {
+          "background": true,
+          "text": true
+        }
+      }
+    }
+  },
+  "attributes": {
+    "childBlockId": {
+      "type": "string",
+      "default": ""
+    },
+    "css": {
+      "type": "string"
+    },
+    "blockId": {
+      "type": "string",
+      "default": ""
+    },
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "mdColumns": {
+      "type": "number",
+      "default": 2
+    },
+    "smColumns": {
+      "type": "number",
+      "default": 1
+    },
+    "gap": {
+      "type": "number",
+      "default": 20
+    },
+    "mdGap": {
+      "type": "number",
+      "default": 20
+    },
+    "smGap": {
+      "type": "number",
+      "default": 20
+    },
+    "carouselType": {
+      "type": "string",
+      "default": "prod"
+    },
+    "size": {
+      "enum": [
+        "large",
+        "small"
+      ]
+    },
+    "options": {
+      "type": "string",
+      "default": "arrow"
+    },
+    "template": {
+      "type": "array",
+      "default": [
+        [
+          "omnipress/woogrid",
+          {}
+        ]
+      ]
+    },
+    "arrowPrev": {
+      "type": "string",
+      "default": "fas fa-angle-left"
+    },
+    "arrowNext": {
+      "type": "string",
+      "default": "fas fa-angle-right"
+    },
+    "navigation": {
+      "type": "object",
+      "default": {}
+    },
+    "pagination": {
+      "type": "object",
+      "default": {}
+    },
+    "autoPlay": {
+      "type": "boolean",
+      "default": false
+    },
+    "loop": {
+      "type": "boolean",
+      "default": false
+    },
+    "classNames": {
+      "type": "string",
+      "default": "swiper-slide"
+    },
+    "showNavigation": {
+      "type": "boolean",
+      "default": true
+    },
+    "showPagination": {
+      "type": "boolean",
+      "default": false
+    },
+    "showScrollbar": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "providesContext": {
+    "classNames": "classNames"
+  },
+  "keywords": [
+    "slider",
+    "woocommerce",
+    "carousel",
+    "products"
+  ],
+  "textdomain": "omnipress",
+  "viewScript": [
+    "omnipress-slider-script"
+  ],
+  "style": [
+    "omnipress-slider-style"
+  ]
+}

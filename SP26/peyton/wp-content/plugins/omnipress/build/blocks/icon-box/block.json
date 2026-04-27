@@ -1,0 +1,220 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/icon-box",
+  "version": "1.0.0",
+  "title": "Icon Box",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Add icon and text description using a single block",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "iconPosition": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "source": "html",
+      "default": "Unlock Your Full Potential Today!",
+      "selector": ".op-block__icon-box-content-title"
+    },
+    "desc": {
+      "type": "string",
+      "source": "html",
+      "selector": ".op-block__icon-box-content-description",
+      "default": "Join thousands of satisfied users who are transforming their lives with our powerful tools."
+    },
+    "icon": {
+      "type": "string",
+      "attribute": "class",
+      "selector": "i",
+      "default": "fas fa-bell"
+    },
+    "href": {
+      "type": "string",
+      "selector": ".op-block__icon-box-content-title",
+      "source": "attribute",
+      "attribute": "href"
+    },
+    "iconLink": {
+      "type": "string",
+      "selector": ".op-block__icon-box-icon > a",
+      "default": "#",
+      "source": "attribute",
+      "attribute": "href"
+    },
+    "showIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "showTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "showDesc": {
+      "type": "boolean",
+      "default": true
+    },
+    "wrapper": {
+      "type": "object",
+      "default": {
+        "backgroundColor": "#fff",
+        "boxShadow": [
+          {
+            "x": 0,
+            "y": 4,
+            "blur": 6,
+            "spread": -1,
+            "color": "rgba(0, 0, 0, 0.1)",
+            "inset": false
+          },
+          {
+            "x": 0,
+            "y": 2,
+            "blur": 4,
+            "spread": -1,
+            "color": "rgba(0, 0, 0, 0.06)",
+            "inset": false
+          },
+          {
+            "x": 0,
+            "y": 1,
+            "blur": 1,
+            "spread": 1,
+            "color": "rgba(0, 0, 0, 0.02)",
+            "inset": false
+          }
+        ],
+        "hover": {
+          "boxShadow": [
+            {
+              "x": 0,
+              "y": 1,
+              "blur": 3,
+              "spread": 0,
+              "color": "rgba(0, 0, 0, 0.1)",
+              "inset": false
+            },
+            {
+              "x": 0,
+              "y": 1,
+              "blur": 2,
+              "spread": 0,
+              "color": "rgba(0, 0, 0, 0.06)",
+              "inset": false
+            }
+          ]
+        }
+      }
+    },
+    "descStyle": {
+      "type": "object",
+      "default": {}
+    },
+    "titleStyle": {
+      "type": "object",
+      "default": {
+        "margin": "23px 0px 8px 0px",
+        "fontSize": "25px"
+      }
+    },
+    "iconStyle": {
+      "type": "object",
+      "default": {
+        "justifyContent": "center",
+        "fontSize": "32px"
+      }
+    },
+    "hideIcon": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideTitle": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideDesc": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "opSettings": {
+    "iconStyle": {
+      "group": "design",
+      "selector": ".op-block__icon-box-icon",
+      "label": "Icon",
+      "toggleAttribute": "showIcon",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": {
+          "colorOnly": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "titleStyle": {
+      "group": "design",
+      "selector": ".op-block__icon-box-content-title",
+      "toggleAttribute": "showTitle",
+      "label": "Heading",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "descStyle": {
+      "group": "design",
+      "selector": ".op-block__icon-box-content-description",
+      "toggleAttribute": "showDesc",
+      "label": "Description",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "opSupports": {
+    "link": true
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "icon box",
+    "icon",
+    "card"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "allOf": [
+        {
+            "$ref": "https://schemas.wp.org/trunk/block.json"
+        },
+        {
+            "type": "object",
+            "properties": {
+                "opSettings": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "object",
+                        "properties": {
+                            "group": {
+                                "type": "string",
+                                "enum": ["general", "design", "advanced"]
+                            },
+                            "selector": { "type": "string" },
+                            "label": { "type": "string" },
+                            "toggleAttribute": { "type": "string" },
+                            "fields": {
+                                "description": "When the block declares support for a specific dimensions property, its attributes definition is extended to include the style attribute.",
+                                "type": "object",
+                                "properties": {
+                                    "spacing": {
+                                        "type": "object",
+                                        "properties": {
+                                            "padding": { "type": "boolean" },
+                                            "margin": { "type": "boolean" }
+                                        }
+                                    },
+                                    "color": {
+                                        "type": "object",
+                                        "properties": {
+                                            "background": { "type": "boolean" },
+                                            "text": { "type": "boolean" }
+                                        }
+                                    },
+                                    "typography": { "type": "boolean" },
+                                    "dimension": {
+                                        "type": "object",
+                                        "properties": {
+                                            "height": { "type": "boolean" },
+                                            "width": { "type": "boolean" },
+                                            "min-height": { "type": "boolean" }
+                                        }
+                                    },
+                                    "border": {
+                                        "type": "object",
+                                        "properties": {
+                                            "border": { "type": "boolean" },
+                                            "borderRadius": { "type": "boolean" }
+                                        }
+                                    }
+                                },
+                                "additionalProperties": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "additionalProperties": {
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

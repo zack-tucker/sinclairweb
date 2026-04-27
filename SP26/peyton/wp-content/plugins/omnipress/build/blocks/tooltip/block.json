@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/tooltip",
+  "version": "1.0.0",
+  "title": "Tooltip",
+  "category": "omnipress",
+  "description": "Add informative tooltips that appear when users hover over elements. Perfect for providing additional context, explanations, or helpful hints without cluttering your content.",
+  "opSettings": {
+    "wrapper": {
+      "group": "design",
+      "selector": ".tooltip",
+      "label": "Tooltip Text",
+      "fields": {
+        "typography": true
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "interactivity": true,
+    "multiple": false
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "taxonomy",
+    "category",
+    "tags"
+  ],
+  "viewScriptModule": [
+    "file:tooltip-view.js"
+  ]
+}

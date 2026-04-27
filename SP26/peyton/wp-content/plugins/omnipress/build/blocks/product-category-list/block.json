@@ -1,0 +1,150 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/woocategory-list",
+  "version": "1.0.0",
+  "title": "Products Category List",
+  "category": "omnipress-woo",
+  "icon": "",
+  "description": "Display WooCommerce product categories in a list view",
+  "supports": {
+    "anchor": true
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "preset": {
+      "type": "string",
+      "default": "one"
+    },
+    "hasEmpty": {
+      "type": "boolean",
+      "default": true
+    },
+    "hasImage": {
+      "type": "boolean",
+      "default": true
+    },
+    "hasCount": {
+      "type": "boolean",
+      "default": true
+    },
+    "layout": {
+      "type": "number",
+      "default": 1
+    },
+    "isDropdown": {
+      "type": "boolean",
+      "default": false
+    },
+    "categorySelected": {
+      "type": "boolean",
+      "default": false
+    },
+    "selectedCategoriesList": {
+      "type": "array",
+      "default": []
+    },
+    "wrapper": {
+      "type": "object",
+      "default": {}
+    },
+    "item": {
+      "type": "object",
+      "default": {}
+    },
+    "image": {
+      "type": "object",
+      "default": {}
+    },
+    "label": {
+      "type": "object",
+      "default": {}
+    },
+    "count": {
+      "type": "object",
+      "default": {}
+    },
+    "showChildOnly": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "opSettings": {
+    "item": {
+      "group": "design",
+      "selector": ".op-woo-catlist__item",
+      "label": "List Item",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "image": {
+      "group": "design",
+      "selector": "img.op-woo-catlist__item-image",
+      "label": "Image",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "image": true
+      }
+    },
+    "label": {
+      "group": "design",
+      "selector": ".op-woo-catlist__item-title h4",
+      "label": "Label",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "count": {
+      "group": "design",
+      "selector": ".op-woo-catlist__item-product-count",
+      "label": "Count",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "spacing": {
+          "padding": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "woocommerce",
+    "woo",
+    "category",
+    "products"
+  ]
+}

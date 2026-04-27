@@ -1,0 +1,211 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/slider",
+  "version": "1.0.0",
+  "title": "Slider",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Create a captivating visual experience & impress your audience",
+  "supports": {
+    "html": false,
+    "className": true,
+    "dimensions": {
+      "minHeight": false,
+      "html": false
+    },
+    "interactivity": true
+  },
+  "providesContext": {
+    "omnipress/parentId": "blockId",
+    "classNames": "classNames"
+  },
+  "opSettings": {
+    "navigation": {
+      "group": "design",
+      "selector": "[class^='swiper-button']",
+      "label": "Navigation",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "fontSize": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "pagination": {
+      "group": "design",
+      "selector": ".swiper-pagination-bullet",
+      "label": "Pagination",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "dimension": {
+          "width": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "paginationActive": {
+      "group": "design",
+      "selector": ".swiper-pagination-bullet-active",
+      "label": "Pagination Active",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "scrollbar": {
+      "group": "design",
+      "selector": ".swiper-scrollbar",
+      "label": "Scrollbar",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "fontSize": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "scrollbarActive": {
+      "group": "design",
+      "selector": "swiper-scrollbar-drag",
+      "label": "Scrollbar Active",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "attributes": {
+    "configs": {
+      "type": "object",
+      "default": {
+        "slidesPerView": 1,
+        "spaceBetween": 0,
+        "prevIcon": "fas fa-angle-left",
+        "nextIcon": "fas fa-angle-right"
+      }
+    },
+    "slideToggleOptions": {
+      "type": "object",
+      "default": {
+        "fade": false,
+        "loop": true,
+        "autoplay": true
+      }
+    },
+    "sliderType": {
+      "type": "string"
+    },
+    "classNames": {
+      "type": "string",
+      "default": "swiper-slide"
+    },
+    "showNavigation": {
+      "type": "boolean",
+      "default": true
+    },
+    "showPagination": {
+      "type": "string",
+      "default": "true"
+    },
+    "showProgress": {
+      "type": "boolean"
+    },
+    "showScrollbar": {
+      "type": "boolean"
+    },
+    "autoplayStopOnLast": {
+      "type": "string",
+      "default": "true"
+    },
+    "blockId": {
+      "type": "string",
+      "default": ""
+    },
+    "arrowIconNext": {
+      "type": "string",
+      "default": "fas fa-angle-right"
+    },
+    "arrowIconPrev": {
+      "type": "string",
+      "default": "fas fa-angle-left"
+    },
+    "navigation": {
+      "type": "object",
+      "default": {}
+    },
+    "pagination": {
+      "type": "object",
+      "default": {}
+    },
+    "scrollbar": {
+      "type": "object",
+      "default": {}
+    },
+    "paginationActive": {
+      "type": "object",
+      "default": {}
+    },
+    "scrollbarActive": {
+      "type": "object",
+      "default": {}
+    },
+    "wrapper": {
+      "type": "object",
+      "default": {}
+    },
+    "sliderWrapper": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "textdomain": "omnipress",
+  "style": [
+    "omnipress-slider-style"
+  ],
+  "viewScriptModule": [
+    "file:./slider-view.js"
+  ]
+}

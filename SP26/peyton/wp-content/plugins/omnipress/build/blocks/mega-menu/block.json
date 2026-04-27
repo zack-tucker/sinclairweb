@@ -1,0 +1,130 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/megamenu",
+  "version": "1.0.0",
+  "title": "Mega Menu",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Add vertical and horizontal menu layouts with multiple setting options",
+  "supports": {
+    "anchor": true
+  },
+  "opSettings": {
+    "menuButton": {
+      "group": "design",
+      "selector": ".op-block__megamenu .op-block__megamenu--hamburger",
+      "label": "Menu Button",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "dimension": {
+          "gap": true,
+          "width": true,
+          "height": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "menuWrapper": {
+      "group": "design",
+      "selector": "ul.op-block__megamenu-lists",
+      "label": "Menu Wrapper",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "dimension": {
+          "gap": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "subMenuWrapper": {
+      "group": "design",
+      "selector": ".op-block__megamenu .op-block__megamenu-lists li:hover > ul",
+      "label": "Submenu Wrapper",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "dimension": {
+          "gap": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "dropdown": {
+      "selector": ".op-block__megamenu .op-block__megamenu-lists li:hover > ul"
+    },
+    "menuList": {
+      "group": "design",
+      "selector": ".op-block__megamenu-dropdown-list-item--link",
+      "label": "Menu Lists",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "dimension": {
+          "gap": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "menuListImage": {
+      "group": "design",
+      "selector": ".op-block__megamenu-dropdown-list-item--image",
+      "label": "Menu Item Image",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "textdomain": "omnipress",
+  "viewScriptModule": [
+    "omnipress-megamenu-view"
+  ]
+}

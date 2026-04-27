@@ -1,0 +1,93 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/back-to-top",
+  "version": "1.0.0",
+  "title": "Back to Top",
+  "category": "omnipress",
+  "description": " Add a back to top button to your page.",
+  "opSettings": {
+    "button": {
+      "group": "design",
+      "selector": "#back-to-top",
+      "label": "Back to Top Button",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "typography": true,
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "scrollBar": {
+      "group": "design",
+      "selector": ".circle-progress::after",
+      "label": "Progress Bar",
+      "fields": {
+        "color": {
+          "background": true
+        }
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string",
+      "default": "fas fa-angle-up",
+      "source": "attribute",
+      "selector": "i",
+      "attribute": "class"
+    },
+    "styles": {
+      "type": "object",
+      "default": {
+        "button": {
+          "height": "40px",
+          "width": "40px",
+          "borderRadius": "50%",
+          "backgroundColor": "var(--op-clr-block-secondary)",
+          "color": "var(--op-clr-white)"
+        },
+        "scrollBar": {
+          "backgroundColor": "var(--op-clr-block-primary)"
+        }
+      }
+    },
+    "iconPosition": {
+      "type": "string",
+      "default": "right"
+    },
+    "content": {
+      "type": "string",
+      "default": "",
+      "source": "html",
+      "selector": "#back-to-top .content"
+    },
+    "progressBarType": {
+      "type": "string",
+      "default": "circle"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "interactivity": true,
+    "multiple": false
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "back to top",
+    "back to top button"
+  ],
+  "viewScriptModule": [
+    "file:back-to-top-view.js"
+  ]
+}

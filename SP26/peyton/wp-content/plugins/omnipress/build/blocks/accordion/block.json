@@ -1,0 +1,122 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "omnipress/accordion",
+  "version": "1.0.0",
+  "title": "Accordion",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Display your schema ready FAQs with Accordion block",
+  "example": {},
+  "supports": {
+    "anchor": true
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "lists": {
+      "type": "array",
+      "default": [
+        {
+          "header": "FAQ item 1?",
+          "key": "Key-1",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+      ]
+    },
+    "disableInitialOpen": {
+      "type": "boolean",
+      "default": true
+    },
+    "iconClass": {
+      "type": "string",
+      "selector": "button i",
+      "default": "fas fa-angle-down",
+      "source": "attribute",
+      "attribute": "class"
+    }
+  },
+  "opSettings": {
+    "accordion": {
+      "group": "design",
+      "selector": ".accordion",
+      "label": "Accordion",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "title": {
+      "group": "design",
+      "selector": ".accordion-header",
+      "label": "Title",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "titleActive": {
+      "group": "design",
+      "selector": ".accordion-header.active",
+      "label": "Title Active",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "description": {
+      "group": "design",
+      "selector": ".accordion-body",
+      "label": "Description",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "typography": true,
+        "dimension": {
+          "marginBottom": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "textdomain": "omnipress",
+  "viewScriptModule": [
+    "file:accordion-view.js"
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/image",
+  "version": "1.0.0",
+  "title": "Image",
+  "category": "omnipress",
+  "icon": "",
+  "description": "An image with advanced controls to make a visual statement.",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "opSettings": {
+    "image": {
+      "group": "design",
+      "selector": ".op-block__image-img",
+      "label": "Image ",
+      "fields": {
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "dimension": {
+          "width": true,
+          "height": true
+        }
+      }
+    },
+    "imageDimension": {
+      "group": "design",
+      "selector": ".op-block__image-item",
+      "label": "Image ",
+      "fields": {}
+    },
+    "ImageCaption": {
+      "group": "design",
+      "selector": ".op-block__image-caption",
+      "label": "Image Caption",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "height": {
+      "type": "number"
+    },
+    "width": {
+      "type": "number"
+    },
+    "content": {
+      "type": "string"
+    },
+    "id": {
+      "type": "number"
+    },
+    "src": {
+      "type": "string"
+    },
+    "isCaption": {
+      "type": "boolean",
+      "default": false
+    },
+    "maskType": {
+      "type": "string",
+      "default": "circle",
+      "selector": ".op-block",
+      "attribute": "data-masks",
+      "source": "attribute"
+    },
+    "maskSize": {
+      "type": "string",
+      "default": "auto",
+      "selector": "img",
+      "attribute": "data-mask-size",
+      "source": "attribute"
+    },
+    "maskPosition": {
+      "type": "string",
+      "default": "center center",
+      "selector": "img",
+      "attribute": "data-mask-position",
+      "source": "attribute"
+    },
+    "maskRepeat": {
+      "type": "string",
+      "default": "no-repeat",
+      "selector": "img",
+      "attribute": "data-mask-repeat",
+      "source": "attribute"
+    },
+    "alt": {
+      "type": "string",
+      "default": "",
+      "selector": "img",
+      "attribute": "alt",
+      "source": "attribute"
+    },
+    "caption": {
+      "type": "string",
+      "source": "text",
+      "selector": "figcaption"
+    },
+    "title": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "img",
+      "attribute": "title"
+    },
+    "target": {
+      "type": "string",
+      "default": "",
+      "selector": "img",
+      "attribute": "target"
+    },
+    "size": {
+      "type": "string",
+      "default": "large",
+      "selector": "img",
+      "attribute": "data-size",
+      "source": "attribute"
+    },
+    "isLoadLazily": {
+      "type": "string",
+      "default": "true",
+      "selector": "img",
+      "attribute": "data-lazy-load",
+      "source": "attribute"
+    },
+    "enabledLightbox": {
+      "type": "boolean",
+      "default": false
+    },
+    "href": {
+      "type": "string"
+    },
+    "linkTarget": {
+      "type": "string"
+    },
+    "linkRel": {
+      "type": "string"
+    },
+    "linkClass": {
+      "type": "string"
+    },
+    "hoverEffect": {
+      "type": "string",
+      "enum": [
+        "zoom-in",
+        "zoom-in-2",
+        "zoom-out",
+        "zoom-out-2",
+        "slide",
+        "rotate",
+        "blur",
+        "gray-scale",
+        "gray-sepia",
+        "blur-gray-scale",
+        "opacity",
+        "opacity-2",
+        "flashing",
+        "shine",
+        "circle"
+      ]
+    }
+  },
+  "textdomain": "omnipress"
+}

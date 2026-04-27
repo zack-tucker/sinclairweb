@@ -1,0 +1,168 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/container",
+  "version": "1.0.0",
+  "title": "Container",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Create beautiful row and column layouts with plenty of styling controls & responsive options",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "usesContext": [
+    "classNames",
+    "omnipress/parentId",
+    "omnipress/editorClasses"
+  ],
+  "providesContext": {
+    "classNames": null
+  },
+  "opSettings": {
+    "wrapper": {
+      "group": "design",
+      "label": "Content",
+      "fields": {
+        "color": {
+          "background": true,
+          "backgroundImage": true,
+          "backgroundVideo": true
+        }
+      }
+    },
+    "innerBlocks": {
+      "group": "design",
+      "label": "Children Typography",
+      "selector": " > .op-container-innerblocks-wrapper *",
+      "fields": {
+        "typography": true
+      }
+    },
+    "flex": {
+      "group": "design",
+      "label": "Children Flex",
+      "selector": " > .op-container-innerblocks-wrapper",
+      "fields": {}
+    },
+    "link": {
+      "group": "design",
+      "label": "Link",
+      "selector": " a",
+      "fields": {}
+    },
+    "content": {
+      "group": "design",
+      "label": "Content",
+      "selector": " > .op-container-innerblocks-wrapper",
+      "fields": {}
+    },
+    "layout": {
+      "group": "design",
+      "label": "Content",
+      "fields": {}
+    },
+    "colors": {
+      "group": "design",
+      "label": "Content",
+      "fields": {}
+    },
+    "background": {
+      "group": "design",
+      "label": "Content",
+      "fields": {}
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string",
+      "default": ""
+    },
+    "extraClasses": {
+      "type": "string"
+    },
+    "css": {
+      "type": "string",
+      "default": ""
+    },
+    "tagName": {
+      "type": "string",
+      "default": "div"
+    },
+    "clientId": {
+      "type": "string"
+    },
+    "columnWidth": {
+      "type": "string",
+      "default": "alignwide"
+    },
+    "contentWidth": {
+      "type": "string",
+      "default": "alignwide"
+    },
+    "variationType": {
+      "type": "string"
+    },
+    "columnsCount": {
+      "type": "number",
+      "default": 1
+    },
+    "backgroundType": {
+      "type": "string",
+      "default": "color"
+    },
+    "background": {
+      "type": "object",
+      "default": {}
+    },
+    "videoBackground": {
+      "type": "string",
+      "default": ""
+    },
+    "videoOpacity": {
+      "type": "number",
+      "default": 1
+    },
+    "blockLink": {
+      "type": "string",
+      "default": ""
+    },
+    "link_rel": {
+      "type": "string",
+      "default": ""
+    },
+    "link_target": {
+      "type": "boolean",
+      "default": false
+    },
+    "colors": {
+      "type": "object",
+      "default": {}
+    },
+    "preview": {
+      "type": "boolean",
+      "default": true
+    },
+    "hideOnDesktop": {
+      "type": "boolean"
+    },
+    "hideOnTablet": {
+      "type": "boolean"
+    },
+    "hideOnMobile": {
+      "type": "boolean"
+    },
+    "styles": {
+      "type": "object",
+      "default": {}
+    },
+    "classNames": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "omnipress",
+  "style": [
+    "omnipress/block/container"
+  ]
+}

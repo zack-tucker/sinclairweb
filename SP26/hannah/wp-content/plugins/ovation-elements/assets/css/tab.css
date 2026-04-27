@@ -1,0 +1,1343 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('./../webfonts/segoe-ui-this/segoeuithis.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.grid-container {
+    display: flex;
+    gap: 0px 40px;
+    padding: 0px;
+}
+
+#ova_elems_ovationSliderTabsContent h2 {
+    font: normal normal 600 20px / 27px Segoe UI, Outfit;
+}
+
+#ova_elems_ovationSliderTabsContent h2 {
+    font: normal normal 600 20px / 27px Segoe UI, Outfit;
+    color: #707070;
+}
+
+.grid-item {
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item h2 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.main-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    background: linear-gradient(to right, #00f, #0ff);
+    /* Blue gradient background */
+    padding: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.item-1 {
+    grid-column: span 3;
+}
+
+.item-2 {
+    grid-column: span 6;
+}
+
+.item-3 {
+    grid-column: span 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.grid1 {
+    grid-column: span 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid2 {
+    grid-column: span 7;
+    /* Second grid spans 7 columns */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+text#OVATION_ELEMENTS {
+    font: normal normal 600 27px / 33px Outfit;
+}
+
+ul#ova_elems_ovationSliderTabs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+li.nav-item a {
+    font: normal normal normal 20px / 32px Segoe UI, Outfit;
+    letter-spacing: 0px;
+    color: #707070;
+}
+
+.nav-tabs .nav-link {
+    background: #0000 !important;
+    border: none !important;
+}
+
+.nav-tabs {
+    border-bottom: 0 !important;
+}
+
+ul#ova_elems_ovationSliderTabs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 15px 20px 20px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.nav-tabs .nav-link {
+    position: relative;
+}
+
+
+.nav-tabs .nav-link.active::after {
+    content: "";
+    width: 58%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    margin: auto;
+    background: transparent linear-gradient(90deg, #0023C4 0%, #FD5CF4 100%) 0% 0% no-repeat padding-box;
+}
+
+.outer-container {
+    max-width: 96%;
+    margin: 30px auto 0px;
+}
+
+#ova_elems_ovationSliderTabsContent h1 {
+    font: normal normal bold 20px / 27px Segoe UI, Outfit !important;
+}
+
+p {
+    font: normal normal normal 18px / 23px Segoe UI, Outfit;
+    letter-spacing: 0px;
+    color: #707070;
+}
+
+.requirement {
+    background: transparent linear-gradient(271deg, #0725C5 0%, #F259F2 100%) 0% 0% no-repeat padding-box;
+    padding: 25px 50px;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.requirement h4 {
+    font: 35px / 44px Outfit;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.requirement li {
+    font: normal normal normal 28px / 38px Segoe UI, outfit;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+
+
+.bundle-wrapper {
+    background: transparent linear-gradient(270deg, #FC5CF4 0%, #0224C4 100%) 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+#ova_elems_ovationSliderTabsContent .bundle-wrapper h2 {
+    font: normal normal 900 55px / 60px Segoe UI, Outfit;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+p.bundle-text {
+    font: normal normal normal 35px / 34px Outfit;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.main-grid {
+    margin-top: 40px;
+    padding: 30px 20px;
+}
+
+#gird-bottom .grid-item h2 {
+    font: normal normal bold 50px / 67px Segoe UI, Outfit;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+div#gird-bottom .grid-item p {
+    font: normal normal normal 23px / 31px Segoe UI, Outfit;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+a.button.review-button {
+    font: normal normal bold 26px / 40px Segoe UI, Outfit;
+    letter-spacing: 0px;
+    color: #0524C5;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.ov-feature-outer .grid-item {
+    background: #F6F6F6;
+    margin-bottom: 30px;
+}
+
+.wrap {
+    margin-bottom: 40px;
+}
+
+div#gird-bottom {
+    background: transparent linear-gradient(90deg, #0023C4 0%, #FD5CF4 100%) 0% 0% no-repeat padding-box;
+    border-radius: 9px;
+}
+
+#ova_elems_ovationSliderTabsContent h1.coming-soon {
+    font: normal normal 900 86px / 89px Segoe UI, Outfit !important;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+p.coming-soon-text {
+    font: normal normal normal 28px / 37px Segoe UI, outfit;
+    letter-spacing: 0px;
+    color: #707070;
+    text-align: center;
+    max-width: 1240px;
+    margin: 0px auto;
+}
+
+div#ova_elems_tab6 .svg-helper svg path {
+    fill: #0023C4;
+}
+
+div#ova_elems_tab6 .ov-feature-outer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+div#ova_elems_tab6 .ov-feature-outer>div {
+    width: calc(100% / 7);
+}
+
+div#ova_elems_tab6 h1 {
+    font: normal normal bold 28px / 37px Segoe UI;
+    letter-spacing: 0px;
+    color: #707070;
+}
+
+p.tab-text-needhelp {
+    font: normal normal normal 20px / 27px Segoe UI, outfit;
+    letter-spacing: 0px;
+    color: #707070;
+    margin: 30px 0px;
+}
+
+.suppoprt-tab-heading {
+    font: normal normal bold 28px / 37px Segoe UI;
+    letter-spacing: 0px;
+    color: #707070;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* header  */
+div#ov-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a.ov-header-review-btn {
+    font: normal normal normal 20px / 27px Segoe UI, outfit;
+    background: transparent linear-gradient(90deg, #0023C4 0%, #FD5CF4 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-link:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.bundle-image {
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+}
+
+.bundle-image {
+    position: relative;
+    bottom: -20px;
+}
+
+.ov-feature-outer .grid-item {
+    width: calc(100% / 4 - 40px);
+}
+
+.grid-item.item-1 {
+    display: flex;
+    align-items: center;
+}
+
+div#gird-bottom .grid-item {
+    background: #0000;
+}
+
+button#search-button {
+    display: none;
+}
+
+.search-container::after {
+    content: "\f002";
+    font-family: "FontAwesome";
+    font-size: 18px;
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    color: #707070;
+}
+
+.search-container {
+    max-width: 500px;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+input#search-box {
+    height: 100%;
+    border-radius: 6px;
+    border: 1px solid #707070;
+    padding-left: 40px;
+    font: normal normal normal 20px/27px Segoe UI;
+    letter-spacing: 0px;
+    color: #1D2327;
+}
+
+.search-wrapper-outer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0px 0px;
+}
+
+select#api-response-dropdown {
+    width: 400px;
+    height: 50px;
+    font: normal normal normal 20px / 27px Segoe UI;
+    letter-spacing: 0px;
+    color: #1D2327;
+    border-radius: 6px;
+    padding: 10px 20px;
+    border-color: #707070;
+}
+
+.card img {
+    max-height: 260px;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+}
+
+.card {
+    border: none !important;
+    padding: 0px;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.card-img-wrap {
+    position: relative;
+}
+
+div#product-cards h5.card-title {
+    margin-bottom: 0px;
+}
+
+#oe-block-tab .ov-button-wrapper {
+    position: absolute;
+    top: auto;
+    bottom: 8px;
+    right: 10px;
+    left: 10px;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+div#product-cards h5.card-title {
+    margin-bottom: 0px;
+    font: normal normal bold 22px / 30px Segoe UI;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-img-wrap {
+    position: relative;
+}
+
+p.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p.card-text span {
+    font: normal normal 600 22px / 30px Outfit;
+    letter-spacing: 0px;
+    color: #FF0707;
+}
+
+.card-text span {
+    font-weight: normal !important;
+    font-size: 18px;
+}
+
+p.card-text {
+    font: normal normal 600 22px / 30px Outfit;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+}
+
+.card-img-wrap::after {
+    content: "";
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    background: #000;
+    opacity: 1;
+    z-index: 0;
+    background: transparent linear-gradient(90deg, #F159F2 0%, #0324C5 100%) 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+}
+
+#oe-block-tab .card-img-wrap a.btn.btn-primary {
+    z-index: 9;
+    background: #fff;
+    color: #5E2CED;
+    border: none;
+    font-weight: 600;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.ov-box .btn.btn-primary:hover {
+    background: #1328c8 !important;
+    color: #fff !important;
+}
+
+#oe-block-tab a.btn.btn-primary.demo {
+    padding: 10px 20px;
+    opacity: 1;
+}
+
+.card-text {
+    font-size: 21px;
+    color: #fff;
+    font-weight: 700;
+}
+
+button#load-more {
+    font: normal normal 600 16px / 30px Outfit;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: #5E2CED;
+    margin: 20px auto;
+}
+
+.search-container ::placeholder {
+    opacity: 1 !important;
+    color: #1D2327;
+}
+
+#product-cards {
+    margin-top: 50px;
+}
+
+.ov-button-wrapper {
+    z-index: 99;
+}
+
+.ov-text-container h6 {
+    font: normal normal normal 18px / 23px Segoe UI, Outfit;
+    letter-spacing: 0px;
+    color: #707070;
+}
+
+select#category {
+    letter-spacing: 0px;
+    color: #000000;
+    font-size: 10px;
+    font-size: 15px;
+    max-width: 100%;
+    width: 100%;
+    height: 48px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.type-dropdown::after {
+    content: "\f161";
+    color: #707070;
+    position: absolute;
+    right: 2px;
+    top: 10px;
+    bottom: 0;
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    background: #fff;
+    height: 30px;
+    width: 30px;
+}
+
+.type-dropdown {
+    position: relative;
+    max-width: 230px;
+    width: 100%;
+}
+
+.type-dropdown {
+    position: relative;
+}
+
+@media(max-width:1400px) {
+    .grid-container {
+        gap: 0px 20px;
+        justify-content: space-between;
+    }
+
+    .ov-feature-outer .grid-item {
+        width: calc(100% / 3 - 10px);
+    }
+
+    .ov-feature-outer .grid-item svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    div#ova_elems_tab6 .ov-feature-outer>div {
+        width: calc(100% / 3);
+    }
+
+    #ova_elems_ovationSliderTabsContent h2 {
+        font: normal normal 600 15px / 17px Segoe UI, Outfit;
+    }
+
+    ul#ova_elems_ovationSliderTabs {
+        gap: 10px 20px;
+    }
+
+    .check {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .requirement h4 {
+        font: 25px / 26px Outfit;
+    }
+
+    .check {
+        font-size: 16px;
+    }
+
+    #ova_elems_ovationSliderTabsContent .bundle-wrapper h2 {
+        font: normal normal 900 45px / 50px Segoe UI, Outfit;
+    }
+
+    p.bundle-text {
+        font: normal normal normal 25px / 27px Outfit;
+    }
+
+    .bundle-wrapper {
+        padding: 30px 40px;
+    }
+
+    .bundle-image {
+        bottom: -30px;
+    }
+
+    div#gird-bottom svg {
+        width: 100%;
+    }
+
+    #gird-bottom .grid-item h2 {
+        font: normal normal bold 35px / 57px Segoe UI, Outfit;
+    }
+
+    a.button.review-button {
+        font: normal normal bold 18px / 30px Segoe UI, Outfit;
+        letter-spacing: 0px;
+        color: #0524C5;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    div#gird-bottom .grid-item p {
+        font: normal normal normal 17px / 31px Segoe UI, Outfit;
+    }
+
+    div#product-cards h5.card-title {
+        font: normal normal bold 20px / 25px Segoe UI;
+        width: 70%;
+    }
+
+    p.card-text {
+        font: normal normal 600 19px / 24px Outfit;
+    }
+
+    p.card-text span {
+        font: normal normal 600 21px / 30px Outfit;
+    }
+
+    .card img {
+        max-height: 200px;
+        height: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        object-position: top;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 5px;
+    }
+
+    #ova_elems_ovationSliderTabsContent h1.coming-soon {
+        font: normal normal 900 66px / 79px Segoe UI, Outfit !important;
+        text-align: center;
+    }
+
+    p.coming-soon-text {
+        font: normal normal normal 17px / 20px Segoe UI, outfit;
+    }
+}
+
+
+@media(max-width:1199px) {
+    ul#ova_elems_ovationSliderTabs {
+        gap: 0px 10px;
+    }
+
+    li.nav-item a {
+        font: normal normal normal 16px / 22px Segoe UI, Outfit;
+    }
+
+    p {
+        font: normal normal normal 14px / 23px Segoe UI, Outfit;
+    }
+
+    .grid-container {
+        gap: 0px 10px;
+    }
+
+    .check img {
+        width: 20px;
+    }
+
+    .check {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    a.button.review-button {
+        font: normal normal bold 16px / 26px Segoe UI, Outfit;
+        padding: 10px 17px;
+    }
+
+    #gird-bottom .grid-item h2 {
+        font: normal normal bold 35px / 47px Segoe UI, Outfit;
+    }
+
+    div#ova_elems_tab .ov-feature-outer>div {
+        width: calc(100% / 5);
+    }
+
+    a.btn.btn-primary {
+        font: 14px / 20px Outfit;
+    }
+
+    button#load-more {
+        font: normal normal 600 16px / 30px Outfit;
+    }
+
+    .search-container {
+        max-width: 40%;
+    }
+
+    select#api-response-dropdown {
+        width: 40%;
+        font: normal normal normal 16px / 27px Segoe UI;
+    }
+
+    input#search-box {
+        padding-left: 20px;
+        font: normal normal normal 16px / 27px Segoe UI;
+    }
+
+    .card {
+        margin: 20px auto;
+    }
+}
+
+@media(max-width:991px) {
+    #ova_elems_ovationSliderTabsContent h2 {
+        font: normal normal 600 12px / 17px Segoe UI, Outfit;
+    }
+
+    div#ova_elems_tab .ov-feature-outer>div {
+        width: calc(100% / 5 - 10px);
+    }
+
+    .grid-container {
+        gap: 0px 10px;
+        flex-wrap: wrap;
+    }
+
+    #ova_elems_ovationSliderTabsContent h2 {
+        font: normal normal 600 13px / 17px Segoe UI, Outfit;
+    }
+
+    #ova_elems_ovationSliderTabs {
+        background-image: none !important;
+    }
+
+    #ova_elems_ovationSliderTabsContent h1.coming-soon {
+        font: normal normal 900 56px / 59px Segoe UI, Outfit !important;
+        text-align: center;
+    }
+
+
+}
+
+@media(max-width:991px) {
+    .container-div .col-lg-5.col-md-5.col-12 {
+        margin-bottom: 20px;
+    }
+
+    .grid-item.item-1 {
+        display: flex;
+        align-items: center;
+        display: none;
+    }
+
+    #gird-bottom .grid-item h2 {
+        font: normal normal bold 35px / 47px Segoe UI, Outfit;
+        text-align: left;
+    }
+
+    div#gird-bottom .grid-item p {
+        text-align: left;
+    }
+
+    input#search-box {
+        padding-left: 34px;
+        font: normal normal normal 16px / 27px Segoe UI;
+    }
+}
+
+@media(max-width:575px) {
+    .main-grid {
+        margin-top: 40px;
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+    #product-cards {
+        margin-top: 20px;
+    }
+
+    div#gird-bottom .grid-item p {
+        text-align: center;
+    }
+
+    #gird-bottom .grid-item h2 {
+        text-align: center;
+    }
+
+    .requirement {
+        align-items: center;
+    }
+
+    #ova_elems_ovationSliderTabsContent .bundle-wrapper h2 {
+        font: normal normal 900 35px / 40px Segoe UI, Outfit;
+    }
+
+    p.bundle-text {
+        font: normal normal normal 15px / 17px Outfit;
+    }
+
+    #gird-bottom .grid-item h2 {
+        font: normal normal bold 25px / 37px Segoe UI, Outfit;
+        text-align: center;
+    }
+
+    div#gird-bottom .grid-item p {
+        font: normal normal normal 14px / 25px Segoe UI, Outfit;
+    }
+
+    .grid-item {
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    ul#ova_elems_ovationSliderTabs {
+        background: none;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    a.ov-header-review-btn {
+        font: normal normal normal 14px / 27px Segoe UI, outfit;
+    }
+
+    div#ov-top svg {
+        width: 150px;
+    }
+
+    li.nav-item a {
+        font: normal normal normal 15px / 20px Segoe UI, Outfit;
+    }
+
+    div#ova_elems_tab6 .ov-feature-outer {
+        display: flex;
+        justify-content: center;
+        gap: 0px 20px;
+    }
+
+    p.tab-text-needhelp {
+        font: normal normal normal 16px / 20px Segoe UI, outfit;
+    }
+
+    div#ova_elems_tab6 .ov-feature-outer {
+        flex-wrap: wrap;
+    }
+
+    div#ova_elems_tab6 .ov-feature-outer>div {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .ov-feature-outer .grid-item {
+        width: calc(100% / 2 - 10px);
+    }
+
+    #ova_elems_ovationSliderTabsContent h2 {
+        font: normal normal 600 11px / 17px Segoe UI, Outfit;
+    }
+
+    .search-wrapper-outer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-container {
+        max-width: 100%;
+    }
+
+    select#api-response-dropdown {
+        width: 100%;
+        border-radius: 5px;
+        max-width: 100%;
+    }
+
+    #ova_elems_ovationSliderTabsContent h1.coming-soon {
+        font: normal normal 900 36px / 50px Segoe UI, Outfit !important;
+    }
+}
+
+
+
+/* --------- New Slider Section CSS --------- */
+
+
+.inner-cards {
+    width: 100%;
+    max-width: 335px;
+}
+
+.slider-card {
+    border-radius: 6px;
+    background-color: #E6E6E6;
+    border: 1px solid #707070;
+    height: 100%;
+}
+
+.template-actions {
+    padding: 0px 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+h5.card-title {
+    color: #1B2227;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}
+
+.slider-card .mt-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15px 0px;
+    gap: 10px;
+}
+
+a.btn.btn-primary {
+    background: transparent linear-gradient(270deg, #0023C4 0%, #F95BF4 100%);
+    padding: 9px 20px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+}
+
+img.card-img-top {
+    border: 1px solid #707070;
+    border-radius: 6px;
+}
+
+.right-div {
+    padding-right: 0;
+}
+
+span.oe-crown {
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Segoe UI";
+    color: #1D2327;
+}
+
+/* ----------New Slider Header ---------- */
+.serch-header.row {
+    max-width: 1653px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.left-div {
+    background: transparent linear-gradient(270deg, #0023C4 0%, #F95BF4 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(270deg, #0023C4 0%, #F95BF4 100%);
+    border-radius: 6px;
+    padding: 0px;
+}
+
+.nav-tabs-slider-sec {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+li.nav-item-slider {
+    margin-bottom: 0px;
+    margin: 0px !important;
+}
+
+.nav-link-slider {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 19px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    padding: 7px 30px;
+}
+
+.active.nav-link-slider:hover {
+    color: #E056F0;
+}
+
+.active.nav-link-slider {
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 6px;
+    color: #E056F0;
+    padding: 7px 30px;
+}
+
+.nav-link-slider:hover {
+    color: #fff;
+}
+
+.slider-search-container {
+    display: flex;
+    border: 1px solid #707070 !important;
+    border-radius: 6px;
+}
+
+.slider-search-container input {
+    border: none;
+    width: 78%;
+    color: #707070;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+}
+
+.slider-search-container i {
+    background: transparent linear-gradient(270deg, #0023C4 0%, #F95BF4 100%) 0% 0% no-repeat padding-box;
+    width: 23%;
+    border-radius: 6px;
+    padding: 13px 5px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+}
+
+/* ----------New Slider Header END ---------- */
+
+/* --------- New Slider Section CSS Resposive --------- */
+
+
+@media screen and (max-width:1440px) and (min-width: 1199px) {
+    .inner-cards {
+        max-width: 305px;
+    }
+
+    a.btn.btn-primary {
+        font-size: 16px;
+    }
+
+    .nav-link-slider {
+        padding: 7px 15px;
+    }
+
+    .nav-link-slider {
+        padding: 7px 15px;
+        font-size: 16px;
+    }
+
+    .slider-search-container i {
+        padding: 13px 5px;
+        font-size: 18px;
+    }
+
+    .container-custom-one .row {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:1199px) and (min-width: 991px) {
+    .container-custom-one .row {
+        justify-content: center;
+    }
+
+    .inner-cards {
+        max-width: 400px;
+    }
+
+    .active.nav-link-slider {
+        padding: 5px 5px;
+    }
+
+    .nav-link-slider {
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+
+    .slider-search-container i {
+        padding: 10px 5px;
+    }
+
+    .slider-search-container input {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width: 768px) {
+    .container-custom-one .row {
+        justify-content: center;
+    }
+
+    .nav-tabs-slider-sec {
+        padding: 10px 5px;
+        row-gap: 10px;
+    }
+
+    .nav-link-slider {
+        font-size: 16px;
+        padding: 7px 10px;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width: 320px) {
+    .nav-tabs-slider-sec {
+        row-gap: 20px;
+    }
+
+    .container-custom-one .row {
+        justify-content: center;
+    }
+
+    .serch-header.row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .left-div {
+        width: 100% !important;
+    }
+
+    .right-div {
+        width: 100% !important;
+        padding: 0px;
+    }
+}
+
+
+/* --------- New Slider Section CSS Responsive END --------- */
+
+/* --------- New Slider Section CSS END --------- */
+
+
+/* Services Tab Css */
+.ova-elems-services-tab-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ova-elems-services-tab-service-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 16px 10px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.ova-elems-services-tab-card-header {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.ova-elems-services-tab-card-header h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font: normal normal bold 18px/22px Roboto;
+    color: #1A1A1A;
+}
+
+
+.ova-elems-services-tab-card-header p {
+     margin-top: 10px;
+    text-align: center;
+    font: normal normal normal 12px / 16px Roboto;
+    letter-spacing: 0px;
+    color: #1A1A1A;
+    opacity: 1;
+}
+
+.ova-elems-services-tab-card-image {
+     position: relative;
+    height: 200px;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.ova-elems-services-tab-card-image img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.4s ease;
+}
+
+.ova-elems-services-tab-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+    color: #fff;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.ova-elems-services-tab-card-overlay::-webkit-scrollbar {
+    display: none;
+}
+.ova-elems-services-tab-service-card:hover .ova-elems-services-tab-card-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ova-elems-services-tab-card-image:hover img {
+    opacity: 0.15;
+}
+
+.ova-elems-services-tab-card-overlay h4 {
+    color: #ff70ff;
+    margin-bottom: 8px;
+    font: normal normal bold 12px/14px Roboto;
+}
+
+.ova-elems-services-tab-card-overlay ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-bottom: 12px;
+}
+
+.ova-elems-services-tab-card-overlay ul li {
+    margin-bottom: 6px;
+    font: normal normal normal 11px/10px Roboto;
+}
+
+.ova-elems-services-tab-delivery {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 8px;
+    font: normal normal normal 12px/16px Roboto;
+}
+
+.ova-elems-services-tab-card-footer {
+    margin-top: 14px;
+    text-align: center;
+}
+
+.ova-elems-services-tab-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: transparent linear-gradient(90deg, #0023C4 0%, #FD5CF4 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: transform 0.25s ease;
+}
+
+.ova-elems-services-tab-btn:hover {
+    transform: scale(1.05);
+    color: white !important;
+}
+
+.ova-elems-services-tab-service-card {
+    overflow: visible !important;
+}
+
+
+.ova-elems-services-tab-cards-wrapper {
+    overflow: visible !important;
+}

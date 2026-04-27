@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/icons",
+  "version": "1.0.0",
+  "title": "Icons",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Add unique and customizable icons to perfectly match your website style",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "flex": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "opSettings": {
+    "flex": {
+      "group": "design",
+      "selector": "",
+      "label": "Icon",
+      "fields": {}
+    }
+  },
+  "textdomain": "omnipress"
+}

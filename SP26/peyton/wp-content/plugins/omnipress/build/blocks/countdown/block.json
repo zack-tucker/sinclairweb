@@ -1,0 +1,198 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "omnipress/countdown",
+  "version": "1.0.0",
+  "title": "Countdown",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Highlight upcoming events with countdown timer",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "opSettings": {
+    "card": {
+      "group": "design",
+      "selector": ".countdown-card",
+      "label": "Card",
+      "fields": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "number": {
+      "group": "design",
+      "selector": ".number",
+      "label": "Digit",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "typography": true,
+        "dimension": {
+          "height": false,
+          "width": false,
+          "min-height": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "label": {
+      "group": "design",
+      "selector": ".label",
+      "label": "Label",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true,
+        "dimension": {
+          "height": false,
+          "width": false,
+          "min-height": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "separator": {
+      "group": "design",
+      "selector": ".separator",
+      "label": "Separator",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "attributes": {
+    "isRecurring": {
+      "type": "boolean",
+      "default": false
+    },
+    "startDate": {
+      "type": "string",
+      "default": ""
+    },
+    "recurringInterval": {
+      "type": "number"
+    },
+    "separatorType": {
+      "type": "string",
+      "default": "colon"
+    },
+    "isShowingModal": {
+      "type": "boolean",
+      "default": false
+    },
+    "blockId": {
+      "type": "string",
+      "default": ""
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "styles": {
+      "type": "object",
+      "default": {
+        "wrapper": {
+          "padding": {
+            "top": "12px",
+            "right": "12px",
+            "bottom": "12px",
+            "left": "12px"
+          }
+        },
+        "card": {
+          "padding": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "separator": {
+          "margin": {
+            "top": "0",
+            "right": "8px",
+            "bottom": "0",
+            "left": "8px"
+          }
+        },
+        "number": {
+          "fontSize": "24px"
+        }
+      }
+    },
+    "hiddenFields": {
+      "type": "array",
+      "default": [
+        "labelTop",
+        "labelBottom"
+      ]
+    },
+    "expiredDate": {
+      "type": "string"
+    },
+    "layoutType": {
+      "type": "string",
+      "default": "two"
+    },
+    "daysLabel": {
+      "type": "string",
+      "default": "DAYS"
+    },
+    "hoursLabel": {
+      "type": "string",
+      "default": "HOURS"
+    },
+    "minutesLabel": {
+      "type": "string",
+      "default": "MINUTES"
+    },
+    "secondsLabel": {
+      "type": "string",
+      "default": "SECONDS"
+    }
+  },
+  "keywords": [
+    "countdown",
+    "timer",
+    "timer"
+  ],
+  "textdomain": "omnipress",
+  "viewScriptModule": [
+    "file:countdown-view.js"
+  ]
+}

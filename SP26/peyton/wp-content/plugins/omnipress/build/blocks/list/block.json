@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/list",
+  "version": "1.0.0",
+  "title": "List",
+  "category": "omnipress",
+  "description": "Display a list of posts based on a taxonomy query.",
+  "opSettings": {
+    "gradientMarker": {
+      "group": "design",
+      "selector": ".list-item-content::before",
+      "label": "Marker Style",
+      "fields": {}
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "listType": {
+      "type": "string",
+      "default": "ul"
+    },
+    "listStyle": {
+      "type": "string"
+    },
+    "listStylePosition": {
+      "type": "string"
+    },
+    "selectedLayout": {
+      "type": "string",
+      "default": "layout-one"
+    },
+    "hideOnDesktop": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideOnTablet": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideOnMobile": {
+      "type": "boolean",
+      "default": false
+    },
+    "isHorizontal": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "interactivity": true
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "list",
+    "list block"
+  ]
+}

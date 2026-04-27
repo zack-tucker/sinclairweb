@@ -1,0 +1,10 @@
+				@font-face {
+					font-family: 'century-regular';
+					src: url('./6420Century-Regular.woff2') format('woff2'),
+						url('./6420Century-Regular.woff') format('woff');
+					  font-display: auto;
+				}
+
+				.century-regular{font-family: 'century-regular' !important;}
+
+		

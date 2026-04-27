@@ -1,0 +1,105 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/popup",
+  "version": "1.0.0",
+  "title": "Popup",
+  "category": "omnipress",
+  "icon": "",
+  "description": "You can create beautiful popup.",
+  "supports": {
+    "className": true,
+    "anchor": true,
+    "interactivity": true,
+    "multiple": false
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "delayBeforePopup": {
+      "type": "number",
+      "default": 1
+    },
+    "displayAfterVisits": {
+      "type": "number",
+      "default": 0
+    },
+    "showEveryTime": {
+      "type": "boolean",
+      "default": false
+    },
+    "preview": {
+      "type": "boolean",
+      "default": true
+    },
+    "isDismissible": {
+      "type": "boolean",
+      "default": true
+    },
+    "closeButtonDelay": {
+      "type": "number",
+      "default": 0
+    },
+    "autoCloseEnabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoCloseDelay": {
+      "type": "number",
+      "default": 30
+    },
+    "instanceId": {
+      "type": "number"
+    },
+    "popupType": {
+      "type": "string",
+      "default": "floating_bar"
+    },
+    "popupTrigger": {
+      "type": "string",
+      "default": "on_page_load"
+    },
+    "popupPosition": {
+      "type": "string"
+    },
+    "modalPosition": {
+      "type": "string"
+    },
+    "slidePosition": {
+      "type": "string"
+    },
+    "maxPopupRepetitions": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "opSettings": {
+    "card": {
+      "group": "design",
+      "selector": ".op-block__post-grid-card-wrap .op-block__post-grid-card.op-block__post-grid-card-items",
+      "label": "card",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

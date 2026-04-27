@@ -1,0 +1,148 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/single-product",
+  "title": "Single Product",
+  "category": "omnipress-woo",
+  "icon": "grid-view",
+  "providesContext": {},
+  "usesContext": [
+    "postType",
+    "postId",
+    "queryId",
+    "post"
+  ],
+  "textdomain": "omnipress",
+  "supports": {
+    "interactivity": true
+  },
+  "parent": [
+    "omnipress/query-template"
+  ],
+  "opSettings": {
+    "title": {
+      "group": "design",
+      "selector": ".post-title > a",
+      "label": "Title",
+      "fields": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "typography": true
+      }
+    },
+    "image": {
+      "group": "design",
+      "selector": ".post-thumbnail",
+      "label": "Thumbnail",
+      "fields": {
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "spacing": {
+          "margin": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "categories": {
+      "group": "design",
+      "selector": ".product-categories > a",
+      "label": "Categories",
+      "fields": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "typography": true
+      }
+    },
+    "price": {
+      "group": "design",
+      "selector": ".woocommerce-Price-amount",
+      "label": "Price",
+      "fields": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "typography": true
+      }
+    },
+    "sale_price": {
+      "group": "design",
+      "selector": ".woocommerce-Price-amount:not(del > .woocommerce-Price-amount)",
+      "label": "sale Price",
+      "fields": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "typography": true
+      }
+    },
+    "add_to_cart": {
+      "group": "design",
+      "selector": ".add-to-cart.button",
+      "label": "Add to Cart",
+      "fields": {
+        "typography": true,
+        "color": {
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "ratings": {
+      "group": "design",
+      "selector": ".woocommerce-product-rating li",
+      "label": "Ratings",
+      "fields": {
+        "typography": true,
+        "dimension": {
+          "gap": true,
+          "margin": true,
+          "padding": true
+        }
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "number"
+    },
+    "layout": {
+      "type": "object",
+      "default": {}
+    },
+    "layoutType": {
+      "type": "string",
+      "default": "one"
+    }
+  },
+  "keywords": [
+    "product",
+    "block",
+    "product block",
+    "single product"
+  ]
+}

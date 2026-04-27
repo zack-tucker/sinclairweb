@@ -1,0 +1,301 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/woogrid",
+  "version": "1.0.0",
+  "title": "Products Grid",
+  "category": "omnipress-woo",
+  "icon": "",
+  "description": "Display WooCommerce products in a grid layout",
+  "supports": {
+    "anchor": true
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "carousel": {
+      "type": "boolean",
+      "default": false
+    },
+    "options": {
+      "type": "string",
+      "default": "arrow"
+    },
+    "arrowNext": {
+      "type": "string",
+      "default": "fa fa-angle-right"
+    },
+    "arrowPrev": {
+      "type": "string",
+      "default": "fa fa-angle-left"
+    },
+    "layout": {
+      "type": "string"
+    },
+    "toggle": {
+      "type": "object",
+      "default": {
+        "title": true,
+        "image": true,
+        "addToCart": true,
+        "price": true,
+        "regularPrice": true,
+        "badge": true,
+        "ratings": true,
+        "discountPercent": true
+      }
+    },
+    "rows": {
+      "type": "number"
+    },
+    "offset": {
+      "type": "number",
+      "default": 0
+    },
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "mdColumns": {
+      "type": "number",
+      "default": 3
+    },
+    "smColumns": {
+      "type": "number",
+      "default": 2
+    },
+    "perPage": {
+      "type": "number",
+      "default": 6
+    },
+    "grid": {
+      "type": "object",
+      "default": {}
+    },
+    "orderBy": {
+      "type": "string",
+      "default": "popularity"
+    },
+    "category": {
+      "type": "string"
+    },
+    "gridWrapper": {
+      "type": "object",
+      "default": {}
+    },
+    "mediaWrapper": {
+      "type": "object",
+      "default": {}
+    },
+    "mediaWrapperImg": {
+      "type": "object",
+      "default": {}
+    },
+    "card": {
+      "type": "object",
+      "default": {}
+    },
+    "title": {
+      "type": "object",
+      "default": {}
+    },
+    "price": {
+      "type": "object",
+      "default": {}
+    },
+    "sale": {
+      "type": "object",
+      "default": {}
+    },
+    "discountedPrice": {
+      "type": "object",
+      "default": {}
+    },
+    "discount": {
+      "type": "object",
+      "default": {}
+    },
+    "ratings": {
+      "type": "object",
+      "default": {}
+    },
+    "addToCart": {
+      "type": "object",
+      "default": {}
+    },
+    "sortType": {
+      "type": "string"
+    },
+    "content": {
+      "type": "object",
+      "default": {}
+    },
+    "outstock": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "opSettings": {
+    "content": {
+      "group": "design",
+      "selector": ".op-product-item__details.op-woo__content",
+      "label": "Content",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "grid": {
+      "group": "design",
+      "selector": ".omnipress-layout-grid",
+      "label": "Content",
+      "fields": {}
+    },
+    "mediaWrapperImg": {
+      "group": "design",
+      "selector": ".op-woo__media-wrapper-img",
+      "label": "Image",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "dimension": {
+          "height": true,
+          "width": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "image": true
+      }
+    },
+    "title": {
+      "group": "design",
+      "selector": ".op-woo__card .op-woo__title",
+      "label": "Title",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "discount": {
+      "group": "design",
+      "selector": ".op-woo__discount",
+      "label": "Discount",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "ratings": {
+      "group": "design",
+      "selector": ".op-woo__ratings",
+      "label": "Ratings",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "addToCart": {
+      "group": "design",
+      "selector": ".op-woo__add-to-cart",
+      "label": "Add to cart",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "outstock": {
+      "group": "design",
+      "selector": ".op-woo__outstock",
+      "label": "Out of stock",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "sale": {
+      "group": "design",
+      "selector": ".op-woo__sale",
+      "label": "Sale Tag",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "viewScriptModule": [
+    "omnipress/woogrid"
+  ],
+  "usesContext": [
+    "classNames"
+  ],
+  "textdomain": "product_grid",
+  "style": [
+    "omnipress/block/layout"
+  ],
+  "keywords": [
+    "grid",
+    "layout",
+    "woogrid",
+    "woo",
+    "woo Layout"
+  ]
+}

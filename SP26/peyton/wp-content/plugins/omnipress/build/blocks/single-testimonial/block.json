@@ -1,0 +1,183 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/single-testimonial",
+  "version": "1.0.0",
+  "title": "Single Testimonial",
+  "category": "omnipress",
+  "description": "Display a list of posts based on a taxonomy query.",
+  "parent": [
+    "omnipress/query-template"
+  ],
+  "usesContext": [
+    "query",
+    "postId",
+    "postType",
+    "isFirstChild"
+  ],
+  "opSettings": {
+    "testimonial": {
+      "group": "design",
+      "selector": ".op-testimonial--content",
+      "label": "Testimonial",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {},
+        "typography": true
+      }
+    },
+    "wrapper": {
+      "group": "design",
+      "selector": ".op-testimonial--card"
+    },
+    "featureImage": {
+      "group": "design",
+      "selector": ".op-testimonial--thumbnail",
+      "label": "Thumbnail",
+      "fields": {
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "spacing": {
+          "margin": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "authorName": {
+      "group": "design",
+      "selector": ".op-testimonial--author-name",
+      "label": "Author Name",
+      "fields": {
+        "typography": true
+      }
+    },
+    "authorRole": {
+      "group": "design",
+      "selector": ".op-testimonial--author-role",
+      "label": "Author Role",
+      "fields": {
+        "typography": true
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "testimonialId": {
+      "type": "number"
+    },
+    "selectedLayout": {
+      "type": "string",
+      "default": "layout-one"
+    },
+    "hideOnDesktop": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideOnTablet": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideOnMobile": {
+      "type": "boolean",
+      "default": false
+    },
+    "condition": {
+      "type": "object",
+      "default": {}
+    },
+    "interactions": {
+      "type": "object",
+      "default": {}
+    },
+    "hiddenFields": {
+      "type": "array",
+      "default": []
+    },
+    "post": {
+      "type": "object"
+    },
+    "configs": {
+      "type": "object",
+      "default": {}
+    },
+    "opAnimation": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "data-op-animation",
+      "selector": "*"
+    },
+    "conditionalControls": {
+      "type": "boolean",
+      "default": false
+    },
+    "controls": {
+      "type": "object",
+      "default": {
+        "user_rules": false,
+        "location_rules": false,
+        "url_rules": false,
+        "device_rules": false,
+        "browser_rules": false
+      }
+    },
+    "conditionalDisplay": {
+      "type": "object",
+      "default": {
+        "user_rules": {
+          "enable": true,
+          "users": [],
+          "user_roles": [],
+          "strict_connector": false
+        },
+        "location": {
+          "ruleSets": [
+            {
+              "enable": true,
+              "id": 1,
+              "rules": []
+            }
+          ]
+        }
+      }
+    },
+    "appliedStyle": {
+      "type": "string"
+    },
+    "componentName": {
+      "type": "string"
+    },
+    "componentId": {
+      "type": "string"
+    },
+    "isSynced": {
+      "type": "boolean"
+    },
+    "backgroundType": {
+      "type": "string"
+    },
+    "tooltipPosition": {
+      "type": "string"
+    },
+    "tooltipText": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "interactivity": true
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "testimonial",
+    "comment"
+  ]
+}

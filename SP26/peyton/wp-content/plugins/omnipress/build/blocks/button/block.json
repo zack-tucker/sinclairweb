@@ -1,0 +1,150 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/button",
+  "version": "1.0.0",
+  "title": "Button",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Add buttons to redirect user to different webpages",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "opSupports": {
+    "link": true
+  },
+  "opSettings": {
+    "wrapper": {
+      "group": "design",
+      "selector": "",
+      "label": "Button",
+      "fields": {
+        "typography": true,
+        "dimension": {
+          "gap": true
+        }
+      }
+    },
+    "icons": {
+      "group": "design",
+      "selector": "i",
+      "label": "Icon",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "dimension": {
+          "fontSize": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string",
+      "default": ""
+    },
+    "css": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "number"
+    },
+    "buttonContentType": {
+      "type": "string",
+      "default": ""
+    },
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": ".op-block__button-content > span",
+      "default": "Learn More"
+    },
+    "rel": {
+      "type": "string",
+      "attribute": "rel",
+      "source": "attribute",
+      "selector": "a",
+      "default": "noopener norefferer"
+    },
+    "dataTitle": {
+      "type": "string",
+      "attribute": "data-title",
+      "source": "attribute",
+      "selector": ".op-block__button",
+      "default": "button"
+    },
+    "dataType": {
+      "type": "string",
+      "attribute": "data-type",
+      "source": "attribute",
+      "selector": ".op-block__button",
+      "default": "button"
+    },
+    "dataId": {
+      "type": "string",
+      "attribute": "data-id",
+      "source": "attribute",
+      "selector": ".op-block__button",
+      "default": "button"
+    },
+    "type": {
+      "type": "string",
+      "attribute": "type",
+      "source": "attribute",
+      "selector": ".op-block__button",
+      "default": "noopener"
+    },
+    "newTab": {
+      "type": "string",
+      "attribute": "target",
+      "selector": "a",
+      "default": "_blank"
+    },
+    "link": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a",
+      "attribute": "href"
+    },
+    "wrapper": {
+      "type": "object",
+      "default": {
+        "border": "unset",
+        "cursor": "pointer"
+      }
+    },
+    "buttonAlign": {
+      "type": "string",
+      "default": "left"
+    },
+    "button": {
+      "type": "object",
+      "default": {}
+    },
+    "iconPosition": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": "i"
+    },
+    "icons": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "textdomain": "omnipress"
+}

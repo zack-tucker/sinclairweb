@@ -1,0 +1,76 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/remote-slider-container",
+  "version": "1.0.0",
+  "title": "Remote Slider Container",
+  "category": "omnipress-new",
+  "icon": "",
+  "description": "Use this block as the core wrapper to create a slider that is controlled remotely using external navigation or pagination blocks..",
+  "supports": {
+    "className": true,
+    "html": false,
+    "anchor": true,
+    "interactivity": true
+  },
+  "providesContext": {
+    "blockId": "blockId",
+    "totalSlides": "totalSlides",
+    "activeIndex": "activeIndex",
+    "classNames": "slideClass"
+  },
+  "opSettings": {
+    "label": {
+      "group": "design",
+      "toggleAttribute": "showLabel",
+      "selector": ".op-block__counter-label",
+      "label": "Label",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "totalSlides": {
+      "type": "number"
+    },
+    "slideClass": {
+      "type": "string",
+      "default": "swiper-slide"
+    },
+    "styles": {
+      "type": "object",
+      "default": {
+        "wrapper": {
+          "backgroundColor": "#5e87297d",
+          "padding": {
+            "top": "50px",
+            "bottom": "50px",
+            "left": "50px",
+            "right": "50px"
+          }
+        }
+      }
+    }
+  },
+  "textdomain": "omnipress",
+  "viewStyle": "omnipress-slider-style",
+  "keywords": [
+    "remote",
+    "slider",
+    "container"
+  ],
+  "viewScriptModule": [
+    "file:./view.js"
+  ]
+}

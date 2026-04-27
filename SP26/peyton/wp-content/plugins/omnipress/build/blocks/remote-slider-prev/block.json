@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/remote-slider-prev",
+  "version": "1.0.0",
+  "title": "Remote Slider Previous",
+  "category": "omnipress-new",
+  "icon": "",
+  "description": "Displays previous navigation buttons for a remote slider. Connects to a remote-slider-container block for slide control.",
+  "supports": {
+    "className": false,
+    "anchor": true,
+    "interactivity": true
+  },
+  "usesContext": [
+    "blockId",
+    "totalSlides",
+    "activeIndex",
+    "classNames"
+  ],
+  "opSettings": {
+    "label": {
+      "group": "design",
+      "toggleAttribute": "showLabel",
+      "selector": ".op-block__counter-label",
+      "label": "Label",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "iconClass": {
+      "type": "string",
+      "default": "fas fa-angle-left"
+    }
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "remote",
+    "slider",
+    "prev"
+  ]
+}

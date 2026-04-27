@@ -1,0 +1,132 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/video",
+  "version": "1.0.0",
+  "title": "Video",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Embed a video from your media library or upload a new one.",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "figure",
+      "default": ""
+    },
+    "videoWrapper": {
+      "type": "object",
+      "default": {
+        "width": "max(100%, 300px)"
+      }
+    },
+    "iframe": {
+      "type": "boolean",
+      "default": false
+    },
+    "height": {
+      "type": "number",
+      "source": "attribute",
+      "selector": "video",
+      "attribute": "height"
+    },
+    "caption": {
+      "type": "rich-text",
+      "source": "rich-text",
+      "selector": "figcaption",
+      "__experimentalRole": "content"
+    },
+    "id": {
+      "type": "number",
+      "__experimentalRole": "content"
+    },
+    "loop": {
+      "type": "boolean",
+      "source": "attribute",
+      "selector": "video",
+      "attribute": "loop"
+    },
+    "muted": {
+      "type": "boolean",
+      "source": "attribute",
+      "selector": "video",
+      "attribute": "muted",
+      "default": false
+    },
+    "controls": {
+      "type": "boolean",
+      "source": "attribute",
+      "selector": "video",
+      "attribute": "controls",
+      "default": true
+    },
+    "autoplay": {
+      "type": "boolean",
+      "source": "attribute",
+      "selector": "video",
+      "attribute": "autoplay",
+      "default": false
+    },
+    "playsInline": {
+      "type": "boolean",
+      "source": "attribute",
+      "selector": "video",
+      "attribute": "playsinline",
+      "default": true
+    },
+    "preload": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "video",
+      "attribute": "preload",
+      "default": "auto"
+    },
+    "poster": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "video",
+      "attribute": "poster"
+    },
+    "src": {
+      "type": "string"
+    },
+    "width": {
+      "type": "number",
+      "source": "attribute",
+      "selector": "video"
+    },
+    "tracks": {
+      "__experimentalRole": "content",
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "default": []
+    }
+  },
+  "opSettings": {
+    "videoWrapper": {
+      "group": "design",
+      "selector": ".op-block__video-wrapper",
+      "label": "Video Wrapper",
+      "fields": {
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

@@ -1,0 +1,201 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/contact-form",
+  "version": "1.0.0",
+  "title": "Contact Form 7",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Get started with contact forms – in just a few clicks!",
+  "supports": {
+    "anchor": true
+  },
+  "opSettings": {
+    "form": {
+      "group": "design",
+      "selector": ".op-block__contact-form-wrapper form",
+      "label": "Form",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "formHeader": {
+      "group": "design",
+      "selector": ".op-block__contact-form-header",
+      "label": "Header",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "formLabel": {
+      "group": "design",
+      "selector": ".wpcf7-form label",
+      "label": "Form Label",
+      "fields": {
+        "spacing": {
+          "margin": true
+        },
+        "color": {
+          "text": true
+        },
+        "typography": true
+      }
+    },
+    "formInput": {
+      "group": "design",
+      "selector": ".wpcf7 .wpcf7-form-control-wrap textarea.wpcf7-form-control, .wpcf7 form input:not([type=file]):not([type=radio]):not([type=checkbox]):not([type=submit])",
+      "label": "Form Input",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "submitButton": {
+      "group": "design",
+      "selector": ".wpcf7 form input[type=submit]",
+      "label": "Submit Button",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "titleStyle": {
+      "group": "design",
+      "selector": ".op-block__contact-form-header h4",
+      "label": "Form Title",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "typography": true
+      }
+    },
+    "descriptionStyle": {
+      "group": "design",
+      "selector": ".op-block__contact-form-header p",
+      "label": "Form Description",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "typography": true
+      }
+    },
+    "successMessage": {
+      "group": "design",
+      "selector": ".wpcf7-form.sent .wpcf7-response-output",
+      "label": "Success Message",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true
+      }
+    },
+    "errorMessage": {
+      "group": "design",
+      "selector": ".wpcf7-form-control-wrap .wpcf7-not-valid-tip, .wpcf7-form.invalid .wpcf7-response-output",
+      "label": "Error Message",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "preview": {
+      "type": "boolean",
+      "default": true
+    },
+    "selectedFormId": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string",
+      "default": "",
+      "source": "html",
+      "selector": ".content"
+    },
+    "hasTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "hasDescription": {
+      "type": "boolean",
+      "default": true
+    },
+    "title": {
+      "type": "string",
+      "default": "Let's Get in Touch"
+    },
+    "description": {
+      "type": "string",
+      "default": "We're open for any suggestion or just to have a chat."
+    }
+  },
+  "keywords": [
+    "contact form",
+    "contact form 7"
+  ],
+  "textdomain": "omnipress"
+}

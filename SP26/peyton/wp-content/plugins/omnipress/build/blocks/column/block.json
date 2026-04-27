@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/innercolumn",
+  "version": "1.0.0",
+  "title": "Inner column",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Inner Column blocks allow easy content structuring, making visually appealing and responsive web page layouts",
+  "supports": {
+    "className": true,
+    "html": false,
+    "anchor": true
+  },
+  "opSettings": {
+    "background": {
+      "group": "design",
+      "label": "Background",
+      "fields": {}
+    },
+    "wrapper": {
+      "group": "design",
+      "label": "Background",
+      "fields": {}
+    },
+    "flex": {
+      "group": "design",
+      "label": "Background",
+      "selector": ".op-column__content-wrapper",
+      "field": {}
+    },
+    "spacing": {
+      "group": "design",
+      "label": "Background",
+      "fields": {}
+    }
+  },
+  "textdomain": "omnipress"
+}

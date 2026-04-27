@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/remote-slider-slides",
+  "version": "1.0.0",
+  "title": "Remote Slider Slides",
+  "category": "omnipress-new",
+  "icon": "",
+  "description": "Remote Slider Content block..",
+  "supports": {
+    "className": true,
+    "anchor": true,
+    "interactivity": true
+  },
+  "usesContext": [
+    "blockId",
+    "totalSlides",
+    "activeIndex",
+    "classNames",
+    "innerBlocks"
+  ],
+  "opSettings": {
+    "label": {
+      "group": "design",
+      "toggleAttribute": "showLabel",
+      "selector": ".op-block__counter-label",
+      "label": "Label",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "totalSlides": {
+      "type": "number"
+    },
+    "slideClass": {
+      "type": "string",
+      "default": "swiper-slide"
+    }
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "remote",
+    "slider",
+    "slides"
+  ]
+}

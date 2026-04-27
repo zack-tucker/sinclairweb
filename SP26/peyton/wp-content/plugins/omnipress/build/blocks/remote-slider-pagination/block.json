@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/remote-slider-pagination",
+  "version": "1.0.0",
+  "title": "Remote Slider Pagination",
+  "category": "omnipress-new",
+  "icon": "",
+  "description": "Adds pagination controls (like dots or numbers) for a remote slider. It connects with a remote-slider-container block and updates it when clicked.",
+  "supports": {
+    "className": true,
+    "anchor": true,
+    "interactivity": true
+  },
+  "usesContext": [
+    "blockId",
+    "totalSlides",
+    "activeIndex",
+    "classNames"
+  ],
+  "opSettings": {
+    "label": {
+      "group": "design",
+      "toggleAttribute": "showLabel",
+      "selector": ".op-block__counter-label",
+      "label": "Label",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    }
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "remote",
+    "slider",
+    "pagination"
+  ]
+}

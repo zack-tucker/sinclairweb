@@ -1,0 +1,174 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/counter",
+  "version": "1.0.0",
+  "title": "Counter",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Show company stats or how many happy customers you have with animation effects",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "opSettings": {
+    "label": {
+      "group": "design",
+      "toggleAttribute": "showLabel",
+      "selector": ".op-block__counter-label",
+      "label": "Label",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true
+      }
+    },
+    "icon": {
+      "group": "design",
+      "toggleAttribute": "showIcon",
+      "selector": ".op-block__counter-icon-wrapper",
+      "label": "Icon",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true
+      }
+    },
+    "number": {
+      "group": "design",
+      "selector": ".op-block__counter-number-wrapper .op-block__counter-number",
+      "label": "Number",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true,
+          "gap": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true
+      }
+    },
+    "prefix": {
+      "group": "design",
+      "toggleAttribute": "showPrefix",
+      "selector": ".op-block__counter-number-prefix",
+      "label": "Prefix",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true
+      }
+    },
+    "suffix": {
+      "group": "design",
+      "toggleAttribute": "showSuffix",
+      "selector": ".op-block__counter-number-suffix",
+      "label": "Suffix",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "showIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "showLabel": {
+      "type": "boolean",
+      "default": true
+    },
+    "showPrefix": {
+      "type": "boolean",
+      "default": true
+    },
+    "showSuffix": {
+      "type": "boolean",
+      "default": true
+    },
+    "content": {
+      "type": "string"
+    },
+    "iconClass": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".op-block__counter-icon-wrapper > i",
+      "attribute": "class",
+      "default": "fas fa-smile"
+    },
+    "duration": {
+      "type": "string",
+      "source": "attribute",
+      "default": "1000",
+      "selector": ".op-block__counter",
+      "attribute": "data-duration"
+    },
+    "CounterPrefix": {
+      "type": "string",
+      "source": "text",
+      "selector": ".op-block__counter-number-prefix",
+      "default": ""
+    },
+    "counterSuffix": {
+      "type": "string",
+      "source": "text",
+      "selector": ".op-block__counter-number-suffix",
+      "default": ""
+    },
+    "counterLabel": {
+      "type": "string",
+      "source": "html",
+      "selector": ".op-block__counter-label",
+      "default": "Happy Customer"
+    },
+    "counterNumber": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".op-block__counter",
+      "attribute": "data-counter-number",
+      "default": "100"
+    },
+    "icon": {
+      "type": "object",
+      "default": {
+        "fontSize": "clamp(20px,2.4vw,24px)"
+      }
+    },
+    "number": {
+      "type": "object",
+      "default": {
+        "fontWeight": 700,
+        "fontSize": "42px",
+        "lineHeight": "1.3em"
+      }
+    }
+  },
+  "textdomain": "omnipress",
+  "viewScriptModule": [
+    "file:counter-view.js"
+  ]
+}

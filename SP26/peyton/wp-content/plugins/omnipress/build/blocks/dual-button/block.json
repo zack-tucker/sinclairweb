@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/dualbutton",
+  "version": "1.0.0",
+  "title": "Dual Buttons",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Design a dual button together with unique features and capabilities for each button",
+  "supports": {
+    "anchor": true
+  },
+  "opSettings": {
+    "wrapper": {
+      "group": "design",
+      "selector": "",
+      "label": "Wrapper",
+      "fields": {}
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "wrapper": {
+      "type": "object",
+      "default": {
+        "justifyContent": "center"
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/breadcrumb",
+  "version": "1.0.0",
+  "title": "Breadcrumb",
+  "category": "omnipress",
+  "description": "A breadcrumb block.",
+  "opSettings": {
+    "breadcrumbItem": {
+      "group": "design",
+      "selector": ".breadcrumb-item",
+      "label": "Breadcrumb Item",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "typography": true,
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "activeBreadcrumb": {
+      "group": "design",
+      "selector": ".breadcrumb-item.active",
+      "label": "Active Breadcrumb",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "typography": true,
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "layout": {
+      "type": "string"
+    },
+    "enableSchema": {
+      "type": "boolean"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "interactivity": true
+  },
+  "textdomain": "omnipress"
+}

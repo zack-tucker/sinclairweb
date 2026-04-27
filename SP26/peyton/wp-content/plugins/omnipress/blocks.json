@@ -1,0 +1,176 @@
+{
+    "container": {
+        "name": "omnipress/container",
+        "label": "Container",
+        "enable": true,
+        "category": "Core",
+        "description": "This is container blocks",
+        "required": true
+    },
+    "heading": {
+        "name": "omnipress/heading",
+        "label": "Heading",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Heading block.",
+        "required": true
+    },
+    "button": {
+        "name": "omnipress/button",
+        "label": "Button",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Button block.",
+        "required": true
+    },
+    "paragraph": {
+        "name": "omnipress/paragraph",
+        "label": "Paragraph",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Paragraph block.",
+        "required": true
+    },
+    "image": {
+        "name": "omnipress/image",
+        "label": "Image",
+        "enable": true,
+        "category": "Core",
+        "description": "This is an Image block."
+    },
+    "video": {
+        "name": "omnipress/video",
+        "label": "Video",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Video block."
+    },
+    "accordion": {
+        "name": "omnipress/accordion",
+        "label": "Accordion",
+        "enable": true,
+        "category": "Core",
+        "description": "This is an Accordion block."
+    },
+    "countdown": {
+        "name": "omnipress/countdown",
+        "label": "Countdown",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Countdown block."
+    },
+    "megamenu": {
+        "name": "omnipress/megaMenu",
+        "label": "Mega Menu",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Mega Menu block."
+    },
+    "slider": {
+        "name": "omnipress/slider",
+        "label": "Slider",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Slider block."
+    },
+    "iconBox": {
+        "name": "omnipress/iconBox",
+        "label": "Icon Box",
+        "enable": true,
+        "category": "Core",
+        "description": "This is an Icon Box block."
+    },
+    "postGrid": {
+        "name": "omnipress/postGrid",
+        "label": "Post Grid",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Post Grid block."
+    },
+    "tabs": {
+        "name": "omnipress/tabs",
+        "label": "Tabs",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Tabs block."
+    },
+    "counter": {
+        "name": "omnipress/counter",
+        "label": "Counter",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Counter block."
+    },
+
+    "css": {
+        "name": "omnipress/custCSS",
+        "label": "Custom CSS",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Custom CSS block."
+    },
+    "dualbutton": {
+        "name": "omnipress/dualButtons",
+        "label": "Dual Buttons",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Dual Buttons block."
+    },
+    "maps": {
+        "name": "omnipress/googleMaps",
+        "label": "Google Maps",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Google Maps block."
+    },
+    "contactForm": {
+        "name": "omnipress/contactForm",
+        "label": "Contact Form",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Contact Form block."
+    },
+    "woogrid": {
+        "name": "omnipress/productsGrid",
+        "label": "Products Grid",
+        "enable": true,
+        "category": "WooCommerce",
+        "description": "This is a Products Grid block."
+    },
+    "teamsBlock": {
+        "name": "omnipress/team",
+        "label": "Team",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Team block."
+    },
+    "productList": {
+        "name": "omnipress/productLists",
+        "label": "Product Lists",
+        "enable": true,
+        "category": "WooCommerce",
+        "description": "This is a Product Lists block."
+    },
+    "woocategory": {
+        "name": "omnipress/productCategoryGrid",
+        "label": "Product Category Grid",
+        "enable": true,
+        "category": "WooCommerce",
+        "description": "This is a Product Category Grid block."
+    },
+    "woocategoryList": {
+        "name": "omnipress/productCategoryList",
+        "label": "Product Category List",
+        "enable": true,
+        "category": "Core",
+        "description": "This is a Product Category List block."
+    },
+
+    "carousel": {
+        "name": "omnipress/productCarousel",
+        "label": "Product Carousel",
+        "enable": true,
+        "category": "WooCommerce",
+        "description": "This is a Product Carousel block."
+    }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/paragraph",
+  "version": "1.0.0",
+  "title": "Paragraph",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Take control of your text appearance and paragraph formatting with multiple setting options.",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "post": {
+      "type": "object"
+    },
+    "placeholder": {
+      "type": "string",
+      "default": "Type / to choose a Block"
+    },
+    "hasDropCap": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "opSettings": {
+    "wrapper": {
+      "group": "design",
+      "label": "Content",
+      "fields": {
+        "typography": true
+      }
+    },
+    "dropCap": {
+      "group": "design",
+      "label": "Drop Cap",
+      "selector": ".is-drop-cap",
+      "fields": {
+        "typography": true
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

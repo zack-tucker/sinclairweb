@@ -1,0 +1,88 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "omnipress/tab-labels",
+  "version": "1.0.0",
+  "title": "Tab Labels",
+  "parent": [
+    "omnipress/tabs"
+  ],
+  "icon": "",
+  "category": "omnipress",
+  "description": "Organize and display content in multiple tabs.",
+  "supports": {
+    "align": false,
+    "html": false,
+    "reusable": false,
+    "className": true,
+    "lock": true,
+    "anchor": true
+  },
+  "opSettings": {
+    "button": {
+      "group": "design",
+      "selector": ".op-block__tab-labels--button",
+      "label": "Button",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "fontSize": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "activeButton": {
+      "group": "design",
+      "selector": ".op-block__tab-labels--button[aria-hidden='false']",
+      "label": "Button Active",
+      "fields": {
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "icon": {
+      "group": "design",
+      "selector": ".op-block__tab-labels--button i",
+      "label": "Icon",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "fontSize": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

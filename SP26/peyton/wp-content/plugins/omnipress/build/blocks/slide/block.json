@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/slide",
+  "version": "1.0.0",
+  "title": "Slide",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Create a slide inside slider",
+  "supports": {
+    "html": false,
+    "className": true,
+    "dimensions": {
+      "minHeight": false,
+      "html": false
+    }
+  },
+  "textdomain": "omnipress",
+  "editorScript": "file:./index.js",
+  "editorStyle": [
+    "file:index.css"
+  ]
+}

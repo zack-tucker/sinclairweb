@@ -1,0 +1,81 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/image-accordion-item",
+  "version": "1.0.0",
+  "title": "Image Accordion Item",
+  "category": "omnipress-new",
+  "icon": "",
+  "description": "Create an engaging visual section with expanding images. Ideal for showcasing features, team members, or visual stories in an interactive accordion layout.",
+  "supports": {
+    "className": true,
+    "anchor": true,
+    "interactivity": true,
+    "html": false
+  },
+  "usesContext": [
+    "blockId",
+    "activeIndex",
+    "totalSlides"
+  ],
+  "opSettings": {
+    "label": {
+      "group": "design",
+      "toggleAttribute": "showLabel",
+      "selector": ".op-block__counter-label",
+      "label": "Label",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "img",
+      "attribute": "id"
+    },
+    "src": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "img",
+      "attribute": "src"
+    },
+    "alt": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "img",
+      "attribute": "alt"
+    },
+    "expandOn": {
+      "type": "string",
+      "enum": [
+        "hover",
+        "click"
+      ],
+      "default": "hover"
+    },
+    "accordionIndex": {
+      "type": "number",
+      "default": 0
+    },
+    "isRemotelySynced": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "omnipress",
+  "viewScript": "op-common-js",
+  "style": "file:./style.css"
+}

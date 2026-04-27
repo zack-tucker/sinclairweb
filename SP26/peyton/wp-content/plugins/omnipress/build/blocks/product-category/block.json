@@ -1,0 +1,202 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/woocategory",
+  "version": "1.0.0",
+  "title": "Products Category Grid",
+  "category": "omnipress-woo",
+  "icon": "",
+  "description": "Product Category Grid - Display a list of products from WooCommerce product category with a chosen preset style, offering flexibility in how it looks with different settings.",
+  "supports": {
+    "anchor": true
+  },
+  "opSettings": {
+    "card": {
+      "group": "design",
+      "selector": ".op-woo__category-card",
+      "label": "Card",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "grid": {
+      "group": "design",
+      "selector": ".omnipress-layout-grid",
+      "label": "Card",
+      "fields": {}
+    },
+    "image": {
+      "group": "design",
+      "selector": "figure .op-woo__category-image",
+      "label": "Image",
+      "fields": {
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "spacing": {
+          "margin": true
+        },
+        "border": {
+          "border": false,
+          "borderRadius": true
+        }
+      }
+    },
+    "title": {
+      "group": "design",
+      "selector": ".op-woo__category-title",
+      "label": "Title",
+      "fields": {
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "typography": true
+      }
+    },
+    "count": {
+      "group": "design",
+      "selector": ".product-category-count",
+      "label": "Count",
+      "fields": {
+        "color": {
+          "background": true,
+          "text": true
+        },
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "typography": true
+      }
+    },
+    "content": {
+      "group": "design",
+      "selector": ".op-woo__card-content",
+      "label": "Content",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "usesContext": [
+    "classNames"
+  ],
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "css": {
+      "type": "string"
+    },
+    "card": {
+      "type": "object",
+      "default": {}
+    },
+    "perPage": {
+      "type": "number",
+      "default": 6
+    },
+    "columns": {
+      "type": "number",
+      "default": 6
+    },
+    "mdColumns": {
+      "type": "number",
+      "default": 3
+    },
+    "smColumns": {
+      "type": "number",
+      "default": 2
+    },
+    "grid": {
+      "type": "object",
+      "default": {}
+    },
+    "rows": {
+      "type": "number",
+      "default": 1
+    },
+    "wrapper": {
+      "type": "object",
+      "default": {}
+    },
+    "categoryTitle": {
+      "type": "object",
+      "default": {}
+    },
+    "arrowNext": {
+      "type": "string",
+      "default": "fa fa-angle-right"
+    },
+    "arrowPrev": {
+      "default": "fa fa-angle-left",
+      "type": "string"
+    },
+    "preset": {
+      "type": "string",
+      "default": "one"
+    },
+    "productsCount": {
+      "type": "object",
+      "default": {}
+    },
+    "subCategory": {
+      "type": "boolean",
+      "default": true
+    },
+    "categoryButton": {
+      "type": "object",
+      "default": {}
+    },
+    "categoryImage": {
+      "type": "object",
+      "default": {}
+    },
+    "cardContent": {
+      "type": "object",
+      "default": {}
+    },
+    "carousel": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "woocommerce",
+    "categories",
+    "category",
+    "product category",
+    "product category"
+  ],
+  "style": [
+    "omnipress/block/layout"
+  ]
+}

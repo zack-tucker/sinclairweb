@@ -1,0 +1,30 @@
+
+/* Preloader Container */
+.op-preloader-progress-bar {
+  text-align: center;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+  width: 300px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px auto;
+  position: relative;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Percentage Text Styling */
+.percentage {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
