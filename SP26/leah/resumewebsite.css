@@ -1,0 +1,105 @@
+
+h2 {
+    color:#017DBF;
+    font-family: Apple Chancery;
+}
+p {
+    color :#9F29C2;
+}
+
+header {
+    color:#9F29C2;
+    font-size: large;
+}
+
+body {
+  background-color: #F8D92A;
+  font-family: Source Serif Variable;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #9F29C2;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: #017DBF;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* ---------- SLIDESHOW ---------- */
+.slideshow {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slides img {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+/* buttons */
+.slideshow button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FFFFFF;
+  border: 2px solid #9F29C2;
+  color: #9F29C2;
+  font-size: 2rem;
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.slideshow button:hover {
+  background: #9F29C2;
+  color: white;
+}
