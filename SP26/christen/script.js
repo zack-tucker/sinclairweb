@@ -1,0 +1,24 @@
+<script id="slideshow-js">
+document.querySelectorAll('.slideshow').forEach(slideshow => {
+  const slides = slideshow.querySelector('.slides');
+  const images = slideshow.querySelectorAll('img');
+  const prev = slideshow.querySelector('.prev');
+  const next = slideshow.querySelector('.next');
+
+  let index = 0;
+
+  function updateSlide() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  next.addEventListener('click', () => {
+    index = (index + 1) % images.length;
+    updateSlide();
+  });
+
+  prev.addEventListener('click', () => {
+    index = (index - 1 + images.length) % images.length;
+    updateSlide();
+  });
+});
+</script>
