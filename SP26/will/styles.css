@@ -1,0 +1,641 @@
+/* ----------------------------------------------------------
+   Theme
+---------------------------------------------------------- */
+
+:root {
+	
+  --primary: #d0a9cf;
+  --primary-light: #e8d7e8;
+  --primary-lighter: #f4ecf4;
+
+  --secondary: #131d28;
+  --secondary-soft: #3a4654;
+
+  --tertiary: #653165; /* minimal */
+
+  --font-heading: "Warbler Display", serif;
+  --font-body: "Mundial Narrow Variable", sans-serif;
+
+  --max-width: 900px;
+
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  --border: rgba(19, 29, 40, 0.12);
+}
+
+/* ----------------------------------------------------------
+   Base
+---------------------------------------------------------- */
+
+body {
+  margin: 0;
+  color: var(--secondary);
+  background: var(--primary-lighter);
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+	
+}
+
+h1, h2, h3 {
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  color: var(--secondary);
+}
+h1 {
+font-family: "warbler-display", sans-serif;
+	font-weight: 700;
+	font-style: italic;	
+	line-height: 40px;
+
+		
+}
+h2 {
+  	font-family: "warbler-display", sans-serif;
+	font-weight: 700;
+	font-style: italic;font-size: 1.5rem;
+  color: var(--secondary);
+  margin-bottom: var(--space-sm);
+	margin-left: 20px;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-sm);
+		font-family: "mundial-narrow-variable", sans-serif;
+font-variation-settings: "wght" 500;
+}
+
+h5 {
+  	font-family: "warbler-display", sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+  color: var(--secondary);
+  margin-bottom: var(--space-sm);
+	margin-left: 20px;
+}
+r1 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+	margin-bottom: var(--space-sm);}
+h4{
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  margin-bottom: var(--space-sm);
+	margin-left: 20px;
+font-family: "mundial-narrow-variable", sans-serif;
+font-variation-settings: "wght" 500;
+line-height: 1.5rem;
+}
+
+p, p1, p2, li, li2 {
+  
+	font-family: "mundial-narrow-variable", sans-serif;
+font-variation-settings: "wght" 300;
+	font-size: 1rem;
+}
+ul {
+  list-style-image: url('Star\ Icon.svg');
+}
+
+.list-inner { margin-left: -26px}
+.list-outer {margin-left: 10px;}
+ul {margin-top: -5px; line-height: 1.75rem;}
+
+a {
+  color: var(--secondary);
+  text-decoration-color: rgba(101, 49, 101, 0.4);
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  text-decoration-color: rgba(101, 49, 101, 0.7);
+}
+/* MASTER ALIGNMENT LINE — all text aligns to the same vertical line */
+.align-block {
+  width: fit-content;
+  margin-left: 20px !important; /* matches h2 */
+  text-align: left;
+}
+hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 3px solid var(--primary);
+    margin: 1em 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* ----------------------------------------------------------
+   Bold and Italics Spans
+---------------------------------------------------------- */
+
+.text-xlight {font-variation-settings: "wght" 200}
+.text-xlight-ital { font-style: italic;
+font-variation-settings: "wght" 200}
+
+.text-light {font-variation-settings: "wght" 300}
+.text-light-ital { font-style: italic;
+font-variation-settings: "wght" 300}
+
+.text-regular {font-variation-settings: "wght" 400}
+.text-regular-ital { font-style: italic;
+font-variation-settings: "wght" 400}
+
+.text-medium {font-variation-settings: "wght" 490}
+.text-medium-ital { font-style: italic;
+font-variation-settings: "wght" 490}
+
+.text-semi {font-variation-settings: "wght" 580}
+.text-semi-ital { font-style: italic;
+font-variation-settings: "wght" 580}
+
+.text-bold {font-variation-settings: "wght" 670}
+.text-bold-ital { font-style: italic;
+font-variation-settings: "wght" 670}
+
+/* ----------------------------------------------------------
+   Layout
+---------------------------------------------------------- */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+  
+}
+.container2 {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px + var(--space-md);
+  padding-left: +40px;
+}
+.section {
+  padding: var(--space-xl) 0;
+  position: relative;
+}
+
+.section:first-of-type {
+  border-top: none;
+}
+
+/* ----------------------------------------------------------
+   Solid geometric shapes (inspired by your resume)
+---------------------------------------------------------- */
+
+.shape {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--primary-light);
+  border-radius: 20px;
+}
+
+/* --- LEFT SIDE SCROLL NAVIGATION --- */
+/* --- Larger invisible hover area --- */
+.nav-hitbox {
+  padding: 0 0 0; /* increases vertical hover zone */
+  cursor: pointer;
+}
+
+/* Make the hitbox trigger the hover state */
+.nav-hitbox:hover a {
+  width: auto;
+  height: 24px;
+  padding: 4px 12px 4px 2px;
+  border-radius: 20px;
+  background: var(--secondary);
+}
+.scroll-nav {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 999;  
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.scroll-nav a {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d0a9cf; /* your lavender */
+  display: flex;
+  align-items: center;
+  padding: 0;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden; /* important */
+}
+
+/* Active section */
+.scroll-nav a.active {
+  background: var(--secondary-soft);
+  outline-offset: -2.5px;
+  outline-color: var(--secondary);
+  outline-style: solid;
+  outline-width: 2.5px;
+  scale: 1.25;
+}
+
+/* Hover expansion — auto width based on text */
+.scroll-nav a:hover {
+  width: auto; /* allows natural expansion */
+  height: 24px; /* keeps your current height */
+  padding: 4px 12px 4px 2px; /* space for dot + label */
+  border-radius: 2px 10px 2px 10px;
+  background: var(--secondary);
+  scale: 1;
+}
+
+/* Label */
+.scroll-nav a::after {
+  content: attr(data-label);
+
+  position: relative;
+  color: white;
+  font-size: 1rem;
+  font-family: "mundial-narrow-variable", sans-serif;
+  font-variation-settings: "wght" 580;
+  opacity: 0;
+  white-space: nowrap;
+  margin-left: 10px; /* spacing from dot */
+  transition: opacity 0.3s ease;
+}
+
+/* Reveal label on hover */
+.scroll-nav a:hover::after {
+  opacity: 1;
+}
+
+/* ----------------------------------------------------------
+   Hero
+---------------------------------------------------------- */
+
+.hero {
+  padding: var(--space-xl) 0 var(--space-lg);
+  position: relative;
+}
+.Logo {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.hero-inner {
+  margin-left: 40px !important;
+  margin-right: auto;
+  text-align: left;
+  width: fit-content;
+}
+.name {
+  font-size: 2.8rem;
+  margin-bottom: var(--space-sm);
+	padding-bottom: 5px;
+		
+}
+
+.role {
+  font-size: 1.2rem;
+  color: var(--secondary-soft);
+  margin-bottom: var(--space-md);font-family: "mundial-narrow-variable", sans-serif;
+font-variation-settings: "wght" 500; font-style: italic;
+}
+
+.intro {
+  max-width: 32rem;
+  margin: 0;
+  font-size: 1rem;
+  color: var(--secondary-soft);
+	  text-align: left;
+	line-height: 5px;
+}
+/* ----------------------------------------------------------
+   Items
+---------------------------------------------------------- */
+
+.item {
+  padding: var(--space-md);
+  border: 1px solid rgba(19, 29, 40, 0.08);
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.4);
+	opacity: 20;
+  margin-bottom: var(--space-lg);
+
+}
+
+.project-card-vertical {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: var(--max-width);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.project-card-vertical img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  max-width: var(--max-width);
+}
+.less-space {margin-bottom: 0.5rem;}
+.even-less-space {margin-bottom: -0.75rem;}
+
+.meta {
+  margin-top: -0.9rem;
+  margin-bottom: var(--space-sm);
+  font-size: 1rem;
+  color: var(--secondary-soft);
+}
+/* ----------------------------------------------------------
+   PROJECT SLIDER
+---------------------------------------------------------- */
+.project-box {
+  background-color: rgba(255,255,255,0.50);
+  border: 1px solid rgba(19,29,40,0.08);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 100% -20px;
+  max-width: var(--max-width);
+  position: relative;
+  overflow: hidden;
+}
+.project-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-left: 20px;
+}
+
+.project-track {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  scrollbar-width: none;
+}
+
+.project-track::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #fff;
+}
+/* --- PROJECT CONTROLS LAYOUT --- */
+.project-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2rem;
+  padding: 0 0.5rem;
+}
+
+/* --- ARROWS (TRIANGLES, NO CIRCLES) --- */
+.arrow {
+  background: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Left triangle */
+.arrow.left {
+  border: solid var(--secondary);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+/* Right triangle */
+.arrow.right {
+  border: solid var(--secondary);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Fade in when hovering project box */
+.project-box:hover .arrow {
+  opacity: 0.7;
+}
+
+.arrow:hover {
+  opacity: 0.7;
+}
+
+/* --- DOTS --- */
+.project-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-dots .dot {
+  width: 12px;
+  height: 12px;
+  background: var(--secondary-soft);
+  border-radius: 50%;
+  opacity: 0.3;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.project-dots .dot.active {
+  opacity: 1;
+  transform: scale(1.0);
+    background: var(--secondary-soft);
+  outline-offset: -1.5px;
+  outline-color: var(--secondary);
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+
+
+/* Container for each image */
+.project-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* The image itself */
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Blur + slight zoom on hover */
+.project-image:hover img {
+  filter: blur(1.5px) brightness(0.7);
+  transform: scale(1.03);
+}
+
+/* Overlay text */
+.project-image::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 6px 10px;
+  font-family: "mundial-narrow-variable", sans-serif;
+  font-variation-settings: "wght" 500;
+  color: white;
+  font-size: 1.125rem;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  line-height: 1.125rem;
+}
+
+/* Show both on hover */
+.project-image:hover::after {
+  opacity: 1;
+}
+
+.arrow, .dot {
+  outline: none;
+  scroll-margin: 0;
+}
+
+/* ----------------------------------------------------------
+   Skills
+---------------------------------------------------------- */
+
+.skills-grid {
+  display: grid;
+  gap: var(--space-lg); margin-top: -20px
+}
+
+.skills-grid ul {
+  padding-left: 1.2rem;
+margin-left: 14px
+}
+
+/* ----------------------------------------------------------
+   Contact
+---------------------------------------------------------- */
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--space-md);
+	margin-left: 34px}
+
+.contact-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* ----------------------------------------------------------
+   Footer
+---------------------------------------------------------- */
+
+.footer {
+  padding: 55px 0;
+  text-align: center;
+  color: var(--primary-light);
+}
+
+/* ----------------------------------------------------------
+   Responsive
+---------------------------------------------------------- */
+
+@media (min-width: 700px) {
+  .skills-grid {
+	  grid-template-columns: repeat(2, 1fr);}
+  }
+/* ----------------------------------------------------------
+   Global Wave Background (solid shapes)
+---------------------------------------------------------- */
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -10;
+  pointer-events: none;
+  width: 140vw;
+  height: 80vh;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 40% 60% 55% 45% / 50% 40% 60% 50%;
+  opacity: 0.45;
+  background: var(--primary-light);
+}
+
+/* Top wave */
+body::before {
+  top: -20vh;
+  z-index: -9;
+  transform: translateX(-50%) rotate(-4deg);
+}
+
+/* Bottom wave */
+body::after {
+  bottom: -25vh;
+  z-index: -8;
+  transform: translateX(-50%) rotate(6deg);
+  background: var(--primary);
+  opacity: 0.35;
+}
+
+/* ----------------------------------------------------------
+   Section-level wave accents
+---------------------------------------------------------- */
+
+
+.bg-objecttop1 {
+  position: absolute; /* Use 'fixed' to stay on screen while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  z-index: -7;
+  background: url('TopLeftCornerGray.svg') no-repeat left top;
+}
+
+.bg-objectbottom1 {
+  position: absolute; /* Use 'fixed' to stay on screen while scrolling */
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -7;
+  background: url('BottomRightCornerGray.svg') no-repeat right bottom;
+}

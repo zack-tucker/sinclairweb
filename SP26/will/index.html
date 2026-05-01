@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>William Rynders — Resume</title>
+
+  <!-- Replace with your actual font hosting (Adobe Fonts, etc.) -->
+  <!-- <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css"> -->
+
+  <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="https://use.typekit.net/wyu5cpx.css">
+</head>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".project-track");
+  const cards = document.querySelectorAll(".project-card");
+  const dots = document.querySelectorAll(".dot");
+  const left = document.querySelector(".arrow.left");
+  const right = document.querySelector(".arrow.right");
+
+  let index = 0;
+
+  function scrollToCard(i) {
+    index = Math.max(0, Math.min(cards.length - 1, i));
+    const card = cards[index];
+    track.scrollLeft = card.offsetLeft;
+    updateDots();
+  }
+
+  function updateDots() {
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[index].classList.add("active");
+  }
+
+  left.addEventListener("click", e => {
+    e.preventDefault();
+    scrollToCard(index - 1);
+  });
+
+  right.addEventListener("click", e => {
+    e.preventDefault();
+    scrollToCard(index + 1);
+  });
+
+  dots.forEach(dot => {
+    dot.addEventListener("click", () => {
+      scrollToCard(parseInt(dot.dataset.index));
+    });
+  });
+
+  track.addEventListener("scroll", () => {
+    let closest = 0;
+    let minDist = Infinity;
+
+    cards.forEach((card, i) => {
+      const dist = Math.abs(card.offsetLeft - track.scrollLeft);
+      if (dist < minDist) {
+        minDist = dist;
+        closest = i;
+      }
+    });
+
+    index = closest;
+    updateDots();
+  });
+
+  updateDots();
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".scroll-nav a");
+  const sections = Array.from(navLinks).map(link => {
+    const id = link.getAttribute("href");
+    return document.querySelector(id);
+  });
+
+  function updateActive() {
+    let currentIndex = -1;
+    sections.forEach((section, i) => {
+      if (!section) return;
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= window.innerHeight * 0.4 && rect.bottom >= window.innerHeight * 0.4) {
+        currentIndex = i;
+      }
+    });
+
+    navLinks.forEach(link => link.classList.remove("active"));
+    if (currentIndex >= 0) navLinks[currentIndex].classList.add("active");
+  }
+
+  // Smooth scroll on click
+  navLinks.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute("href"));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop,
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+
+  window.addEventListener("scroll", updateActive);
+  updateActive();
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector(".scroll-nav");
+  let hideTimer;
+
+  function showNav() {
+    nav.classList.remove("hidden");
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(() => {
+      nav.classList.add("hidden");
+    }, 3000); // 3 seconds
+  }
+
+  // Show nav on scroll or mouse movement
+  window.addEventListener("scroll", showNav);
+  window.addEventListener("mousemove", showNav);
+
+  // Start the timer on load
+  showNav();
+});
+</script>
+
+
+<body>
+<div class="bg-objecttop1"></div>
+
+<nav class="scroll-nav">
+  <div class="nav-hitbox"><a href="#about" data-label="ABOUT"></a></div>
+  <div class="nav-hitbox"><a href="#experience" data-label="EXPERIENCE"></a></div>
+  <div class="nav-hitbox"><a href="#projects" data-label="PROJECTS"></a></div>
+  <div class="nav-hitbox"><a href="#education" data-label="EDUCATION"></a></div>
+  <div class="nav-hitbox"><a href="#skills" data-label="SKILLS"></a></div>
+  <div class="nav-hitbox"><a href="#contact" data-label="CONTACT"></a></div>
+</nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>  
+<div class="Logo"><img src="Two Color Primary Logo.svg" alt="Description of the image" width="600px"></div> <br> </header>
+          
+  <main>
+
+    <!-- GRAPHIC DESIGNER -->
+    <section id="title" class="section">
+      <div class="container">
+        <h2>Graphic Designer</h2></div>
+		 <div class="container2">
+        <p2> Composed and dedicated designer with broad knowledge of digital and traditional design, and strong experience collaborating in group environments. Attentive, prepared, and focused on creating professional and unique visual solutions.
+        </p2> 
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2></div>
+		 <div class="container2">
+        <p2> I approach design with a calm, thoughtful mindset—balancing creativity with structure to create work that feels clear, friendly, and purposeful. My background spans print, digital, motion, and web design, supported by strong problem‑solving skills and a genuine interest in understanding people’s needs.
+        </p2> 
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+
+        <article class="item">
+          <h3>KROGER | MAINEVILLE, OH </h3>
+          <p class="meta">Assistant Customer Service Manager / Cashier · July 2022–Present</p>
+          <ul class="list-inner">
+           <li>Supervised and supported more than 50 employees while maintaining productivity and workflow.</li>
+            <li>Resolved customer complaints and returns with professionalism and care.</li>
+            <li>Collaborated with employees and managers, prioritizing requests and managing time effectively.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="align-block">Projects</h2>
+    <div class="project-box">
+
+      <!-- TRACK -->
+      <div class="project-track">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card" id="p1">
+         <div class="project-image" data-title="TIGER'S MARK PRINTING COMPANY">
+            <a href="projects.html#project1"> 
+              <img src="VIS_1250_Composition_Mockup.png" alt="">
+                </a>
+                
+            </div>
+          <div class="project-image" data-title="COFFEE PACKAGING">
+              <a href="projects.html#project2">
+                <img src="Coffee Mockup Main Page.png" alt="">
+               </a>
+            </div>
+          <div class="project-image" data-title="GRIDS PROJECT">
+              <a href="projects.html#project3">
+                <img src="4B+C Main.png" alt="">
+                  </a>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card" id="p2">
+         <div class="project-image" data-title="MOCKUPS">
+            <a href="projects.html#project4"> 
+              <img src="Mockups 1140 Main.png" alt="">
+                </a>
+                
+            </div>
+          <div class="project-image" data-title="HOW TOMORROW MIGHT LOOK">
+              <a href="projects.html#project5">
+                <img src="1310 How Tomorrow Might Look Main.png" alt="">
+               </a>
+            </div>
+          <div class="project-image" data-title="PERSONAS">
+              <a href="projects.html#project6">
+                <img src="Persona 1320 Main.png" alt="">
+                  </a>
+            </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card" id="p3">
+         <div class="project-image" data-title="WEBPAGE | Sinclair Hub">
+            <a href="projects.html#project7"> 
+              <img src="Clear is kind website main.png" alt="">
+                </a>
+                
+            </div>
+          <div class="project-image" data-title="HOW TOMORROW MIGHT LOOK">
+              <a href="projects.html#project8">
+                <img src="ex.png" alt="">
+               </a>
+            </div>
+          <div class="project-image" data-title="PERSONAS">
+              <a href="projects.html#project9">
+                <img src="ex.png" alt="">
+                  </a>
+            </div>
+        </div>
+
+        <!-- Add up to 9 total -->
+      </div>
+
+<div class="project-controls">
+    <button class="arrow left"></button>
+
+    <div class="project-dots">
+        <button class="dot" data-index="0"></button>
+        <button class="dot" data-index="1"></button>
+        <button class="dot" data-index="2"></button>
+    </div>
+
+    <button class="arrow right"></button>
+</div>
+    </div>
+  </div>
+</section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education</h2>
+
+        <article class="item"> 
+          <h3><span class="text-bold-ital">SINCLAIR COMMUNITY COLLEGE</span> | DAYTON, OH</h3>
+          <p class="meta">Accredited by the <span class="text-medium-ital">National Association of Schools of Art and Design</span></p>
+          <p class="less-space"><span class="text-medium">VISUAL COMMUNICATIONS</span> - Associate of Applied Science</p>
+            <ul class="list-inner">
+            <li>Design Processes Certificate <span class="text-regular-ital">May 2026</span></li>
+            <li>Anticipated graduation <span class="text-regular-ital">May 2027</span></li>
+            </ul>
+          <p class="less-space"><span class="text-medium">DIGITAL MEDIA DESIGN</span> - Associate of Applied Science</p>
+            <ul class="list-inner">
+            <li>Web Design Certificate <span class="text-regular-ital">May 2026</span></li>
+            <li>Advanced Web Design Certificate <span class="text-regular-ital">May 2027</span></li>
+            <li>Anticipated graduation <span class="text-regular-ital">May 2027</span></li>
+            </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+
+          <div>
+            <h4 class="align-block">Proficient In</h4>
+            <ul class="list-outer">
+              <li>Adobe <span class="text-medium">InDesign</span></li>
+              <li>Adobe <span class="text-medium">Illustrator</span></li>
+              <li>Adobe <span class="text-medium">Photoshop</span></li>
+              <li>Microsoft <span class="text-medium">Word</span></li>
+              <li>Microsoft <span class="text-medium">Excel</span></li>
+              <li>Microsoft <span class="text-medium">PowerPoint</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="align-block">Familiar With</h4>
+            <ul>
+              <li>Adobe <span class="text-medium">After Effects</span></li>  
+              <li>Adobe <span class="text-medium">Premier Pro</span></li>
+              <li>Adobe <span class="text-medium">Dreamweaver</span></li>
+              <li>Visual Studio Code</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2> </div>
+       <div class="container2"> <p class="even-less-space"> I am always open to discussing design, collaboration, or creative opportunities. Feel free to reach out.</p>
+<p><span class="text-medium-ital">513</span> 873 <span class="text-xlight">0114 |</span> <a href="mailto:william.rynders@sinclair.edu"><span class="text-medium-ital">william.rynders</span>@sinclair.edu</a><span class="text-xlight"> |</span> <span class="text-medium-ital">Dayton,</span> OH <span class="text-xlight">45402</span></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 William Rynders</p>
+    </div>
+  </footer>
+<div class="bg-objectbottom1"></div>
+</body>
+</html>

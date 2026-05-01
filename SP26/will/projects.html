@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — William Rynders</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/wyu5cpx.css">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".scroll-nav a");
+  const sections = [...navLinks].map(link => {
+    const id = link.getAttribute("href");
+    return document.querySelector(id);
+  });
+
+  function updateActive() {
+    let index = sections.findIndex(sec => {
+      const rect = sec.getBoundingClientRect();
+      return rect.top <= window.innerHeight * 0.4 &&
+             rect.bottom >= window.innerHeight * 0.4;
+    });
+
+    navLinks.forEach(link => link.classList.remove("active"));
+    if (index >= 0) navLinks[index].classList.add("active");
+  }
+
+  window.addEventListener("scroll", updateActive);
+  updateActive();
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector(".scroll-nav");
+  let hideTimer;
+
+  function showNav() {
+    nav.classList.remove("hidden");
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(() => {
+      nav.classList.add("hidden");
+    }, 3000); // 3 seconds
+  }
+
+  // Show nav on scroll or mouse movement
+  window.addEventListener("scroll", showNav);
+  window.addEventListener("mousemove", showNav);
+
+  // Start the timer on load
+  showNav();
+});
+</script>
+
+<body>
+
+<nav class="scroll-nav">
+  <div class="nav-hitbox"><a href="#project1" data-label="TIGER'S MARK"></a></div>
+  <div class="nav-hitbox"><a href="#project2" data-label="COFFEE PACKAGING"></a></div>
+  <div class="nav-hitbox"><a href="#project3" data-label="THE EXCLAMATION POINT"></a></div>
+  <div class="nav-hitbox"><a href="#project4" data-label="MOCKUPS"></a></div>
+  <div class="nav-hitbox"><a href="#project5" data-label="HOW TOMORROW MIGHT LOOK"></a></div>
+  <div class="nav-hitbox"><a href="#project6" data-label="PERSONAS & LIBRARY RESEARCH"></a></div>
+   <div class="nav-hitbox"><a href="#project7" data-label="WEBPAGE - Sinclair Hub"></a></div>
+
+</nav>
+<div class="bg-objecttop1"></div>
+
+<header class="hero">
+  <div class="Logo">
+    <img src="Two Color Primary Logo.svg" width="600px" alt="">
+  </div>
+</header>
+<div class="bg-logo"></div>
+<main>
+
+<section class="section">
+  <div class="container">
+    <h5>Projects</h5><hr>
+  </div>
+</section>
+
+<!-- PROJECT 1 -->
+<section id="project1" class="section">
+  <div class="container">
+    <h2 class="align-block">Tiger’s Mark Printing Company</h2>
+
+    <div class="project-section">
+      <div class="project-card-vertical">
+        <img src="VIS_1250_Composition_Mockup.png" alt="">
+    </div>
+    <p class="align-block">
+The objective of this project was to create a marketing campaign for a print company. The first step in the process was to brainstorm a company and create a brand guide, including colors, fonts, and logos.
+Above is a large mock-up showing all the projects that I created in this class: folder,
+brochure, variable data mailer, business card, and poster. </p><br><br>
+      <div class="project-section">
+      <div class="project-card-vertical">
+        <img src="Brochure Mockup Inside.png" alt="">
+      </div>
+      <p class="align-block">
+The next steps involved applying the created brand guides to make different printed pieces. Above is the inside and outside of the tri-fold brochure that I created, following the brand guides that I also developed.
+      </p><br><br>
+    <div class="project-section">
+      <div class="project-card-vertical">
+        <img src="Business Card TM.png" alt="">
+      </div>
+      <p class="align-block">
+This project further improved my understanding of advertising and of the print world. I now know the importance of brand guides and having structure in marketing. <br>
+<span class="text-semi">Fall 2025</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT 2 -->
+<section id="project2" class="section">
+  <div class="container">
+    <h2 class="align-block">Coffee Packaging</h2>
+    <div class="project-section">
+      <div class="project-card-vertical">
+        <img src="Coffee Mockups.png" alt="">
+    </div>
+    <p class="align-block">
+This project combined with a prior project, utilizing a global issue that was chosen, and incorporating it into a coffee brand. This required creating a brand story and purpose, and displaying that through the design of the brand. <br>
+The process started by creating the brand name, mission, and colors. After these were finalized, it was time to start drawing thumbnail ideas for logos. The last step for this project was to combine everything and create the final packaging.
+</p><br><br>
+    <div class="project-section">
+      <div class="project-card-vertical">
+        <img src="1100 Coffee Packaging 1.png" alt="">
+    </div>
+    <p class="align-block">
+  This project helped reinforce the importance of unity and purpose in product design, as well as any other area of design. <br>
+<span class="text-semi">Fall 2024</span>
+ </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT 3 -->
+<section id="project3" class="section">
+  <div class="container">
+    <h2 class="align-block">The Exclamation Point</h2>
+
+    <div class="project-section">
+      <div class="project-card-vertical">
+     <img src="4B+C.png" alt="">
+    </div>
+    <p class="align-block">
+    The objective of this project was to use different kinds of grids to understand the positives and negatives of them, as well as to understand the importance of alignment and measuring. The process began by creating thumbnails of different ideas for each of the grid layouts. Once a specific thumbnail was chosen it was then created on Adobe InDesign, assuring that it followed the assigned grid as much as possible. <br>
+  The grid used on the left is a modular grid with no gutter space, consisting of grid boxes which sit up right next to each other. The grid used on the right is also a modular grid, but it has a twelve-point gutter between each module in both row (horizontal), and column (vertical). </p><br><br>
+    <div class="project-section">
+      <div class="project-card-vertical">
+        <img src="4B+C Grids.png" alt="">
+    </div>
+    <p class="align-block">
+    This project improved my knowledge of grids and their importance to guide the eye of the viewer, as well as maintain unity.
+   <br> <span class="text-semi">Spring 2025</span></p>
+    </div>
+</section>
+
+<!-- PROJECT 4 -->
+<section id="project4" class="section">
+  <div class="container">
+    <h2 class="align-block">Mockups</h2>
+
+    <div class="project-section">
+      <div class="project-card-vertical">
+     <img src="Mockups 1140 Emojis.png" alt="">
+    </div>
+    <p class="align-block">
+  The objective of this project was to create custom emojis and place them on mockups. The process involved having to brainstorm many versions of a decided route for emojis. Once thumbnails for emojis were created, they were critiqued and narrowed down to the final ten, which were then created digitally and revised. 
+
+  </p><br><br>
+    <div class="project-section">
+      <div class="project-card-vertical">
+        <img src="Mockups 1140 Posters.png" alt="">
+    </div>
+    <p class="align-block">
+    The objective of this project was to find a movie poster and re-create it using different adobe tools. The process of this project first involved selecting a movie poster, followed by recreating it using different tools in Adobe Illustrator and Photoshop. Once finished, I then placed the poster on mockups to display what it would look like in different environments.  </p><br><br>
+    <div class="project-section">
+      <div class="project-card-vertical">
+        <img src="Mockups 1140 Billboards.png" alt="">
+    </div>
+    <p class="align-block">
+The objective of this project was to create night and day variants of billboards for a company of choice using their brand guide. This project involved having to research the brand and brand guide, using resources from the guide to design a billboard, which was then placed on a mockup and edited to appear as if it fits in the environment. <br>
+These projects helped to jumpstart my knowledge of branding, mockups, and much more. They were a few of the first design projects that I completed. <br>
+  <span class="text-semi">Fall 2024</span></p>
+    </div>
+</section>
+
+<!-- PROJECT 5 -->
+<section id="project5" class="section">
+  <div class="container">
+    <h2 class="align-block">How Tomorrow Might Look</h2>
+
+    <div class="project-section">
+      <div class="project-card-vertical">
+        <img src="1310 How Tomorrow Might Look.png" alt="">
+    </div>
+    <p class="align-block">
+The objective of this project was to imagine and create a website that might exist in the future. The process involved creating a persona in a future time period. The persona would have desires and problems that need fixed. This provides someone who can be the focus of the design process for a website. Once these needs were discovered, I came up with ideas for a website that would be helpful for this persona, keeping in mind that it would be a website many years in the future.
+Once the idea for the website was chosen, I designed what I thought that website might look like. <br>
+<span class="text-semi">Fall 2025</span></p><br><br>
+  </div>
+</section>
+
+<!-- PROJECT 6 -->
+<section id="project6" class="section">
+  <div class="container">
+    <h2 class="align-block">Personas</h2>
+
+    <div class="project-section">
+      <div class="project-card-vertical">
+           <img src="Persona 1320 1 + 2.png" alt="">
+    </div>
+    <p class="align-block">
+The objective of this project was to observe and learn from the community at the Dayton Metro Library's Northwest branch. This project involved multiple methods of research: Observation, Interviews, and a Collaborative Activity.
+The first method, observation, involved studying different spaces inside the library and the people that used them. After observation, we then interviewed several people, asking questions about the library. We asked if they came to the library frequently, if they felt comfortable there, why they came to the library, and more. This step helped greatly, revealing hidden needs, feelings, and concerns of the community.
+For the last method, we invited the community to take part in a group collage activity, piecing together different photos to represent their idea of the community of the library. Once these all were completed, we compiled all of the information we gathered, fitting each quote or idea into categories to show how the community feels overall.
+We then used all this information to create four personas that represent the people or the ideas that were shared. These personas encapsulate the people we interviewed and observed in our time at the library. 
+</p><br><br>
+    <div class="project-section">
+      <div class="project-card-vertical">
+        <img src="Persona 1320 3 + 4.png" alt="">
+    </div>
+    <p class="align-block"> These personas, and the research used to create them, helped to give the library a new perspective of the people that go there and what the library could possibly improve or take into consideration.
+     <br><span class="text-semi">Spring 2026</span>
+    </p>
+    </div>
+</section>
+
+<!-- PROJECT 7 -->
+<section id="project7" class="section">
+  <div class="container">
+    <h2 class="align-block">Webpage - Sinclair Hub</h2>
+
+    <div class="project-section">
+      <div class="project-card-vertical">
+           <img src="Paper Prototype GIF 1330.gif" alt="">
+    </div>
+    <p class="align-block">
+The objective of this project was to create a website to help a persona representing a group of people. This project also involve several steps of prototyping, digitally and physically. These prototypes were tested by other students who were not familiar with the class, making sure that the prototypes could be easily navigated.
+    </p><br><br>
+    <div class="project-section">
+      <div class="project-card-vertical">
+        <img src="Clear is Kind Website Calendar.png" alt="">
+    </div>
+    <p class="align-block">
+This project helped to demonstrate the importance of prototyping and testing usability, making sure that each webpage is easy to navigate.<br> 
+    <a href="https://www.figma.com/proto/0gXvxgFrTdnfnWFZmDajbs/Wireframe-For-WebPage?node-id=16-107&starting-point-node-id=16%3A107"> Click here to try out the prototype.</a> 
+      <br> <span class="text-semi">Spring 2026</span></p>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 William Rynders</p>
+  </div>
+</footer>
+<div class="bg-objectbottom1"></div>
+
+</body>
+</html>
