@@ -1,0 +1,221 @@
+/* ---------- Root & Base ---------- */
+
+:root {
+  --pink1: #ffd3f2;
+  --pink2: #ffb7e5;
+  --pink3: #ff9ad8;
+  --pink4: #ff7acb;
+  --peach: #ffcf9f;
+  --cream: #ffffff;
+  --rose: #ff4fa8;
+  --shadow: rgba(0, 0, 0, 0.25);
+
+  --font-main: "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  margin: 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, var(--pink1), var(--pink3));
+  font-family: var(--font-main);
+  color: #4a0034;
+}
+
+/* ---------- Pixel Art Placement ---------- */
+
+.pixel-hero-kirby {
+  position: absolute;
+  width: 90px;
+  top: -10px;
+  right: 20px;
+  z-index: 10;
+}
+
+.pixel-peek-hero {
+  position: absolute;
+  width: 90px;
+}
+
+.pixel-peek-header {
+  width: 90px;
+  position: absolute;
+  top: -40px;
+  right: 10px;
+}
+.pixel-peek-headersss {
+  width: 90px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.pixel-peek-header-kirb {
+  width: 90px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+.pixel-corner-left {
+  width: 80px;
+  position: absolute;
+  left: -20px;
+  bottom: 10px;
+}
+
+.pixel-floating-top {
+  width: 120px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pixel-floating-divider {
+  width: 100px;
+  display: block;
+  margin: 0 auto -20px auto;
+}
+
+.pixel-footer-float {
+  width: 120px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+/* ---------- Panels ---------- */
+
+.panel {
+  background: var(--cream);
+  border: 2px solid var(--pink4);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.panel-header {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--rose);
+  letter-spacing: 0.1em;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  background: var(--cream);
+  border: 2px solid var(--pink4);
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  box-shadow: 0 10px 25px var(--shadow);
+}
+
+.hero-name {
+  font-size: 2.8rem;
+  margin: 0;
+  color: var(--rose);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-title {
+  display: flex; 
+  align-items: center;
+  margin: 0.3rem 0 1rem;
+  font-size: 1rem;
+  color: var(--pink4);
+  letter-spacing: 0.1em;
+}
+
+.logo{
+  width: 6rem;
+  height: auto;
+}
+
+.hero-card {
+  background: var(--pink1);
+  border: 2px solid var(--pink4);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+
+
+/* ---------- Navigation ---------- */
+
+.main-nav {
+  text-align: center;
+ 
+
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--rose);
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--pink4);
+  border-radius: 999px;
+  background: var(--pink2);
+  margin: 0 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+/* ---------- Slideshow ---------- */
+/* ---------- SLIDESHOW ---------- */
+.slideshow {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slides img {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+/* buttons */
+.slideshow button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.7);
+  border: 2px solid #F50098;
+  color: #F50098;
+  font-size: 2rem;
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.slideshow button:hover {
+  background: #F50098;
+  color: white;
+}
+
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--rose);
+  font-family: var(--font-mono);
+}
